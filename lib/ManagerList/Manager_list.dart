@@ -1,3 +1,4 @@
+import 'package:admincode/Information/information.dart';
 import 'package:admincode/Mangerdetails/Manager_details.dart';
 import 'package:admincode/Selldetails/Sell_details.dart';
 import 'package:flutter/material.dart';
@@ -90,7 +91,7 @@ class _Manager_listState extends State<Manager_list> {
             InkWell(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Manager_details()));
+                    MaterialPageRoute(builder: (context) => information()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -184,7 +185,7 @@ class _Manager_listState extends State<Manager_list> {
             InkWell(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Manager_details()));
+                    MaterialPageRoute(builder: (context) => information()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.w),
