@@ -12,39 +12,9 @@ class Manufacturingman_list extends StatefulWidget {
 }
 
 class _Manufacturingman_listState extends State<Manufacturingman_list> {
-  DateTime currentDate = DateTime.now();
-  Future<void> _selectDate(BuildContext context) async {
-    final DateTime? pickedDate = await showDatePicker(
-        context: context,
-        initialDate: currentDate,
-        firstDate: DateTime(1900),
-        lastDate: DateTime(3050));
-    if (pickedDate != null && pickedDate != currentDate)
-      setState(() {
-        currentDate = pickedDate;
-      });
-  }
-
-  final ScrollController _controller = ScrollController();
-  double _scrollOffset = 0;
-
-  // The maximum scroll offset
-  // In other words, this means the user has reached the bottom of the list view
-  double? _maxOffset;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(actions: [
-          IconButton(
-            onPressed: () {
-              showSearch(
-                context: context,
-                delegate: CustomSearchDelegate(),
-              );
-            },
-            icon: const Icon(Icons.search),
-          )
-        ]),
         backgroundColor: Colors.white,
         body: ListView(
           children: [
@@ -65,53 +35,6 @@ class _Manufacturingman_listState extends State<Manufacturingman_list> {
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10))),
                 )),
-
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  Text(currentDate.toString()),
-                  ElevatedButton(
-                    onPressed: () => _selectDate(context),
-                    child: Text('Select date'),
-                  ),
-                ],
-              ),
-            ),
-            // Container(
-            //   alignment: Alignment.center,
-            //   margin: EdgeInsets.symmetric(horizontal: 120),
-            //   height: 40.h,
-            //   width: 300.w,
-            //   decoration: BoxDecoration(
-            //       boxShadow: [
-            //         BoxShadow(
-            //           color: Colors.grey.withOpacity(0.5),
-            //           spreadRadius: 5,
-            //           blurRadius: 7,
-            //           offset: Offset(0, 3), // changes position of shadow
-            //         ),
-            //       ],
-            //       color: Colors.white,
-            //       borderRadius: BorderRadius.circular(10),
-            //       // boxShadow: [
-            //       //   BoxShadow(
-            //       //     color: Colors.grey.withOpacity(0.5),
-            //       //     spreadRadius: 5,
-            //       //     blurRadius: 7,
-            //       //     offset: Offset(0, 3), // changes position of shadow
-            //       //   ),
-            //       // ],
-            //       border: Border.all(color: Colors.blue)),
-            //   child: Text(
-            //     "19-03-22",
-            //     style: TextStyle(
-            //         fontFamily: "itim", fontSize: 20, color: Colors.black),
-            //   ),
-            // ),
             SizedBox(
               height: 20.h,
             ),

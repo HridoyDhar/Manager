@@ -547,7 +547,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Buy and Made",
+                            "Others",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,

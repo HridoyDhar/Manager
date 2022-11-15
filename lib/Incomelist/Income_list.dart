@@ -32,38 +32,8 @@ class _Income_listState extends State<Income_list> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        actions: [
-          IconButton(
-            onPressed: () {
-              showSearch(
-                context: context,
-                delegate: CustomSearchDelegate(),
-              );
-            },
-            icon: const Icon(Icons.search),
-          )
-        ],
-      ),
       body: ListView(
         children: [
-          SizedBox(
-            height: 30,
-          ),
-          Container(
-              height: 40.h,
-              width: 300.w,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              child: TextField(
-                decoration: InputDecoration(
-                    labelText: "Search",
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: Colors.blueGrey,
-                    ),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10))),
-              )),
           SizedBox(
             height: 20,
           ),

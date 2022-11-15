@@ -35,9 +35,9 @@ class _Employe_detailsState extends State<Employe_details> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text("             Mr.Rahul",
+            child: Text(" Mr.Rahul",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
+                    fontSize: 15, fontFamily: "itim", color: Colors.blue)),
           ),
           SizedBox(
             height: 20,
@@ -51,9 +51,9 @@ class _Employe_detailsState extends State<Employe_details> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text("            Mew town area ,Chittagong",
+            child: Text("Mew town area ,Chittagong",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
+                    fontSize: 15, fontFamily: "itim", color: Colors.blue)),
           ),
           SizedBox(
             height: 20,
@@ -67,9 +67,9 @@ class _Employe_detailsState extends State<Employe_details> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text("            013743995723",
+            child: Text("013743995723",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
+                    fontSize: 15, fontFamily: "itim", color: Colors.blue)),
           ),
           SizedBox(
             height: 20,
@@ -83,25 +83,9 @@ class _Employe_detailsState extends State<Employe_details> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text("            Mew town area ,Chittagong",
+            child: Text("Join date:03-04-2000",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Container(
-            alignment: Alignment.centerLeft,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 20.h,
-            width: 200.w,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text("            Mew town area ,Chittagong",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
+                    fontSize: 15, fontFamily: "itim", color: Colors.redAccent)),
           ),
           SizedBox(
             height: 20,

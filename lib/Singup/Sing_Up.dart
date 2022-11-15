@@ -1,3 +1,4 @@
+import 'package:admincode/Homepage/Home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -40,7 +41,7 @@ class _Sing_UpState extends State<Sing_Up> {
               controller: emailController,
               decoration: InputDecoration(
                   labelText: "Name",
-                  hintText: "Enter your email or number",
+                  hintText: "Enter your full name ",
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.r)),
                   prefixIcon: Icon(
@@ -143,6 +144,31 @@ class _Sing_UpState extends State<Sing_Up> {
                 //   }
 
                 // }
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20.h,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Home_page()));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 110.w),
+              alignment: Alignment.center,
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.r),
+                  color: Color(0xff35396D)),
+              child: Text(
+                "SingUp",
+                style: TextStyle(
+                    fontSize: 15.sp,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white),
               ),
             ),
           ),

@@ -34,17 +34,6 @@ class _Mortage_listState extends State<Mortage_list> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(actions: [
-          IconButton(
-            onPressed: () {
-              showSearch(
-                context: context,
-                delegate: CustomSearchDelegate(),
-              );
-            },
-            icon: const Icon(Icons.search),
-          )
-        ]),
         backgroundColor: Colors.white,
         body: ListView(
           children: [
@@ -80,46 +69,6 @@ class _Mortage_listState extends State<Mortage_list> {
                 ],
               ),
             ),
-            // SizedBox(
-            //   height: 20,
-            // ),
-            // InkWell(
-            //   onTap: () {
-            //     Navigator.push(context,
-            //         MaterialPageRoute(builder: (context) => Mortage_image()));
-            //   },
-            //   child: Container(
-            //     margin: EdgeInsets.symmetric(horizontal: 20.w),
-            //     height: 40.h,
-            //     width: 200.w,
-            //     decoration: BoxDecoration(
-            //       boxShadow: [
-            //         BoxShadow(
-            //           color: Colors.grey.withOpacity(0.2),
-            //           spreadRadius: 3,
-            //           blurRadius: 3,
-            //           offset: Offset(0, 2), // changes position of shadow
-            //         ),
-            //       ],
-            //       color: Colors.white,
-            //       borderRadius: BorderRadius.circular(10.r),
-            //     ),
-            //     child: Row(
-            //       mainAxisAlignment: MainAxisAlignment.center,
-            //       children: [
-            //         Container(
-            //           child: Text(
-            //             "Do you have old document then click on here and scan the documents",
-            //             style: TextStyle(
-            //                 fontSize: 15.sp,
-            //                 fontWeight: FontWeight.w700,
-            //                 color: Colors.black),
-            //           ),
-            //         ),
-            //       ],
-            //     ),
-            //   ),
-            // ),
             SizedBox(
               height: 20,
             ),

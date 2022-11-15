@@ -23,13 +23,14 @@ class login_user extends StatefulWidget {
   // final VoidCallback onClickedlogin;
   ////
   const login_user({Key? key}) : super(key: key);
-  // GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
   State<login_user> createState() => _login_userState();
 }
 
 class _login_userState extends State<login_user> {
+  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
   ////
   // Future login() async {
   //   final GoogleSignInAccount googleSignInAccount =
@@ -51,41 +52,41 @@ class _login_userState extends State<login_user> {
   final passwordController = TextEditingController();
 
   //////
-  final _form = GlobalKey<FormState>();
-  bool _isValid = false;
-  void _saveForm() {
-    setState(() {
-      setState(() {
-        _isValid = _form.currentState!.validate();
-      });
-    });
-  }
-  ////
+  // final _form = GlobalKey<FormState>();
+  // bool _isValid = false;
+  // void _saveForm() {
+  //   setState(() {
+  //     setState(() {
+  //       _isValid = _form.currentState!.validate();
+  //     });
+  //   });
+  // }
+  // ////
 
-  static Future<User?> loginUsingEmailPassword(
-      {required String email,
-      required String pasword,
-      required BuildContext context}) async {
-    FirebaseAuth auth = FirebaseAuth.instance;
-    User? user;
-    try {
-      UserCredential userCredential = await auth.signInWithEmailAndPassword(
-          email: email, password: pasword);
-      user = userCredential.user;
-    } on FirebaseAuthException catch (e) {
-      if (e.code == "User-not-found") {
-        print("No user found for that email");
-      }
-    }
-    return user;
-  }
+  // static Future<User?> loginUsingEmailPassword(
+  //     {required String email,
+  //     required String pasword,
+  //     required BuildContext context}) async {
+  //   FirebaseAuth auth = FirebaseAuth.instance;
+  //   User? user;
+  //   try {
+  //     UserCredential userCredential = await auth.signInWithEmailAndPassword(
+  //         email: email, password: pasword);
+  //     user = userCredential.user;
+  //   } on FirebaseAuthException catch (e) {
+  //     if (e.code == "User-not-found") {
+  //       print("No user found for that email");
+  //     }
+  //   }
+  //   return user;
+  // }
 
-  @override
-  void dispose() {
-    emailController.dispose();
-    passwordController.dispose();
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   emailController.dispose();
+  //   passwordController.dispose();
+  //   super.dispose();
+  // }
 
 ///////
   @override
@@ -108,19 +109,9 @@ class _login_userState extends State<login_user> {
           margin: EdgeInsets.symmetric(horizontal: 20.w),
           child: TextField(
             // //////
-            key: _form,
+            key: _formKey,
             controller: emailController,
             decoration: InputDecoration(
-                // KeybordType:TextInputType.emailAddress,
-                // validator:(value){
-                //   if(value==null||value.isEmpty){
-                //     return 'This field is required';
-                //   }
-                // }
-                // if(!RegExp(r'\S+@\S+\.\S+').hasMatch(value)){
-                //   return "Please enter a valid email address";
-                // }
-                // return null;
                 labelText: "Email/Number",
                 hintText: "Enter your email or number",
                 border: OutlineInputBorder(
@@ -129,10 +120,19 @@ class _login_userState extends State<login_user> {
                   Icons.email,
                   color: Color(0xff35396D),
                 )),
-            // validator:
-            //     MultiValidator([RequiredValidator(errorText: "required")])
-            // validator:(email)=>email!=null &&!EmailValidator.validate(email)
-            // ?'Enter a valid email':null,
+            // validator: (String value) {
+            //   if (value.isEmpty) {
+            //     return 'Email is Required';
+            //   }
+
+            //   if (!RegExp(
+            //           r"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
+            //       .hasMatch(value)) {
+            //     return 'Please enter a valid email Address';
+            //   }
+
+            //   return null;
+            // }
           ),
         ),
         SizedBox(
@@ -242,7 +242,7 @@ class _login_userState extends State<login_user> {
         InkWell(
           onTap: (() {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Home_page()));
+                context, MaterialPageRoute(builder: (context) => Sing_Up()));
             // final provider =
             //     Provider.of<googlesinginprovider>(context, listen: false);
             // provider.login();
