@@ -46,18 +46,16 @@ class _New_mortageState extends State<New_mortage> {
           height: 20,
         ),
         Container(
-          alignment: Alignment.center,
-          margin: EdgeInsets.symmetric(horizontal: 20),
           height: 40.h,
           width: 300.w,
-          decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.blue)),
-          child: Text(
-            "Krishna Gold Shop",
-            style: TextStyle(
-                fontSize: 25, fontFamily: "itim", color: Colors.black),
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          child: TextField(
+            decoration: InputDecoration(
+              labelText: "Shop Name",
+              hintText: "Enter your shop name",
+              border:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+            ),
           ),
         ),
         SizedBox(
@@ -138,58 +136,28 @@ class _New_mortageState extends State<New_mortage> {
         SizedBox(
           height: 20,
         ),
-        Container(
-            width: 400,
-            child: Column(children: [
-              Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(
-                      height: 40,
-                      width: 60,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        controller: Ornamentname,
-                        decoration: InputDecoration(
-                          labelText: "Ornamentname",
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10)),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 60,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Weight",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 120,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Money",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    )
-                  ])
-            ])),
+        Column(children: [
+          Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  width: 120,
+                ),
+                Container(
+                  height: 40,
+                  width: 200,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Percent",
+                        hintText: '100=5%',
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                )
+              ])
+        ]),
         SizedBox(
           height: 20,
         ),
@@ -199,9 +167,12 @@ class _New_mortageState extends State<New_mortage> {
               Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    SizedBox(
+                      width: 60,
+                    ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -216,7 +187,7 @@ class _New_mortageState extends State<New_mortage> {
                     ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -226,21 +197,6 @@ class _New_mortageState extends State<New_mortage> {
                                 borderRadius: BorderRadius.circular(10))),
                       ),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 120,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Money",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    )
                   ])
             ])),
         SizedBox(
@@ -252,9 +208,12 @@ class _New_mortageState extends State<New_mortage> {
               Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    SizedBox(
+                      width: 60,
+                    ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -269,7 +228,7 @@ class _New_mortageState extends State<New_mortage> {
                     ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -279,21 +238,6 @@ class _New_mortageState extends State<New_mortage> {
                                 borderRadius: BorderRadius.circular(10))),
                       ),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 120,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Money",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    )
                   ])
             ])),
         SizedBox(
@@ -305,9 +249,12 @@ class _New_mortageState extends State<New_mortage> {
               Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    SizedBox(
+                      width: 60,
+                    ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -322,7 +269,7 @@ class _New_mortageState extends State<New_mortage> {
                     ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -332,21 +279,6 @@ class _New_mortageState extends State<New_mortage> {
                                 borderRadius: BorderRadius.circular(10))),
                       ),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 120,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Money",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    )
                   ])
             ])),
         SizedBox(
@@ -358,9 +290,12 @@ class _New_mortageState extends State<New_mortage> {
               Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    SizedBox(
+                      width: 60,
+                    ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -375,33 +310,16 @@ class _New_mortageState extends State<New_mortage> {
                     ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
-                        controller: Weight,
                         decoration: InputDecoration(
                             labelText: "Weight",
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10))),
                       ),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 120,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        controller: Money,
-                        decoration: InputDecoration(
-                            labelText: "Money",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    )
                   ])
             ])),
         SizedBox(
@@ -413,9 +331,12 @@ class _New_mortageState extends State<New_mortage> {
               Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    SizedBox(
+                      width: 60,
+                    ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -430,7 +351,7 @@ class _New_mortageState extends State<New_mortage> {
                     ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -440,21 +361,6 @@ class _New_mortageState extends State<New_mortage> {
                                 borderRadius: BorderRadius.circular(10))),
                       ),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 120,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Money",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    )
                   ])
             ])),
         SizedBox(
@@ -466,9 +372,12 @@ class _New_mortageState extends State<New_mortage> {
               Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    SizedBox(
+                      width: 60,
+                    ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -483,7 +392,7 @@ class _New_mortageState extends State<New_mortage> {
                     ),
                     Container(
                       height: 40,
-                      width: 60,
+                      width: 150,
                       margin: EdgeInsets.symmetric(horizontal: 20),
                       alignment: Alignment.center,
                       child: TextField(
@@ -493,21 +402,53 @@ class _New_mortageState extends State<New_mortage> {
                                 borderRadius: BorderRadius.circular(10))),
                       ),
                     ),
+                  ])
+            ])),
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+            width: 400,
+            child: Column(children: [
+              Row(
+                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
                     SizedBox(
-                      height: 10,
+                      width: 60,
                     ),
                     Container(
-                      height: 40,
-                      width: 120,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Money",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    )
+                        height: 40,
+                        width: 150,
+                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: Colors.black)),
+                        child: Text(
+                          "19ps",
+                          style: TextStyle(
+                              fontFamily: "itim",
+                              fontSize: 20,
+                              color: Colors.black),
+                        )),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Container(
+                        height: 40,
+                        width: 150,
+                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: Colors.black)),
+                        child: Text(
+                          "6.4b",
+                          style: TextStyle(
+                              fontFamily: "itim",
+                              fontSize: 20,
+                              color: Colors.black),
+                        )),
                   ])
             ])),
         SizedBox(
@@ -537,15 +478,23 @@ class _New_mortageState extends State<New_mortage> {
             height: 40.h,
             width: 300.w,
             alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 110),
+            margin: EdgeInsets.symmetric(horizontal: 200),
             decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.2),
+                  spreadRadius: 3,
+                  blurRadius: 3,
+                  offset: Offset(0, 2), // changes position of shadow
+                ),
+              ],
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(10),
+            ),
             child: Text(
               "Done",
               style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
+                  fontSize: 20, fontFamily: "itim", color: Colors.white),
             ),
           ),
         ),
@@ -556,6 +505,9 @@ class _New_mortageState extends State<New_mortage> {
           alignment: Alignment.centerLeft,
           child: Row(
             children: [
+              SizedBox(
+                width: 50,
+              ),
               Text(
                 "You need to other's mortage ",
                 style: TextStyle(

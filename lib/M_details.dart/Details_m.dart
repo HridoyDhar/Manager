@@ -1,31 +1,15 @@
 import 'package:admincode/Homepage/Home_page.dart';
-import 'package:admincode/M_details.dart/Details_m.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Mortage_person extends StatefulWidget {
-  const Mortage_person({Key? key}) : super(key: key);
+class Details_m extends StatefulWidget {
+  const Details_m({Key? key}) : super(key: key);
 
   @override
-  State<Mortage_person> createState() => _Mortage_personState();
+  State<Details_m> createState() => _Details_mState();
 }
 
-class _Mortage_personState extends State<Mortage_person> {
-  DateTime currentDate = DateTime.now();
-  Future<void> _selectDate(BuildContext context) async {
-    final DateTime? pickedDate = await showDatePicker(
-        context: context,
-        initialDate: currentDate,
-        firstDate: DateTime(1900),
-        lastDate: DateTime(3050));
-    if (pickedDate != null && pickedDate != currentDate)
-      setState(() {
-        currentDate = pickedDate;
-      });
-  }
-
-  final ScrollController _controller = ScrollController();
-  double _scrollOffset = 0;
+class _Details_mState extends State<Details_m> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -234,55 +218,22 @@ class _Mortage_personState extends State<Mortage_person> {
             DataCell(Text('')),
             DataCell(Text('')),
             DataCell(Text('Interest')),
-            DataCell(Text('...')),
+            DataCell(Text('5600Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('')),
             DataCell(Text('')),
             DataCell(Text('Total')),
-            DataCell(Text('...')),
+            DataCell(Text('232434')),
           ]),
         ]),
-        SizedBox(
-          height: 20,
-        ),
-        SizedBox(
-          height: 20,
-        ),
-        Container(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              Text(currentDate.toString()),
-              ElevatedButton(
-                onPressed: () => _selectDate(context),
-                child: Text('Select date'),
-              ),
-            ],
-          ),
-        ),
-        SizedBox(
-          height: 5,
-        ),
-        Container(
-          height: 40,
-          width: 150,
-          margin: EdgeInsets.symmetric(horizontal: 20),
-          alignment: Alignment.center,
-          child: TextField(
-            decoration: InputDecoration(
-                labelText: "Pay",
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10))),
-          ),
-        ),
         SizedBox(
           height: 20,
         ),
         InkWell(
           onTap: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Details_m()));
+                context, MaterialPageRoute(builder: (context) => Home_page()));
           },
           child: Container(
             height: 40.h,
@@ -302,7 +253,7 @@ class _Mortage_personState extends State<Mortage_person> {
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text(
-              "Done",
+              "Print",
               style: TextStyle(
                   fontSize: 20, fontFamily: "itim", color: Colors.white),
             ),

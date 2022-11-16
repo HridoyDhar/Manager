@@ -1,3 +1,4 @@
+import 'package:admincode/Homepage/Home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -103,6 +104,22 @@ class _Sell_detailsState extends State<Sell_details> {
             ),
           ),
           SizedBox(
+            height: 20,
+          ),
+          Container(
+            alignment: Alignment.centerLeft,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 20.h,
+            width: 200.w,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Text("22K",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.yellow)),
+          ),
+          SizedBox(
             height: 10,
           ),
           DataTable(columns: [
@@ -196,6 +213,38 @@ class _Sell_detailsState extends State<Sell_details> {
               DataCell(Text('2500000Tk')),
             ]),
           ]),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Home_page()));
+            },
+            child: Container(
+              height: 40.h,
+              width: 300.w,
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 200),
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                "Print",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.white),
+              ),
+            ),
+          ),
         ]));
   }
 }

@@ -38,18 +38,16 @@ class _New_sellState extends State<New_sell> {
           height: 20,
         ),
         Container(
-          alignment: Alignment.center,
-          margin: EdgeInsets.symmetric(horizontal: 20),
           height: 40.h,
           width: 300.w,
-          decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.blue)),
-          child: Text(
-            "Krishna Gold Shop",
-            style: TextStyle(
-                fontSize: 25, fontFamily: "itim", color: Colors.black),
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          child: TextField(
+            decoration: InputDecoration(
+              labelText: "Shop Name",
+              hintText: "Enter your shop name",
+              border:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+            ),
           ),
         ),
         SizedBox(
@@ -124,6 +122,47 @@ class _New_sellState extends State<New_sell> {
                 )),
           ),
         ),
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+            width: 400,
+            child: Column(children: [
+              Row(
+                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Container(
+                      height: 40,
+                      width: 120,
+                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      alignment: Alignment.center,
+                      child: TextField(
+                        decoration: InputDecoration(
+                            labelText: "Carrat",
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10))),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 40,
+                      width: 120,
+                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      alignment: Alignment.center,
+                      child: TextField(
+                        decoration: InputDecoration(
+                            labelText: "Money",
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10))),
+                      ),
+                    )
+                  ])
+            ])),
         SizedBox(
           height: 20,
         ),
@@ -500,17 +539,64 @@ class _New_sellState extends State<New_sell> {
           height: 20,
         ),
         Container(
-          height: 40.h,
-          width: 300.w,
-          alignment: Alignment.center,
-          margin: EdgeInsets.symmetric(horizontal: 80),
-          child: TextField(
-            decoration: InputDecoration(
-                labelText: "Discount",
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10))),
-          ),
-        ),
+            width: 400,
+            child: Column(children: [
+              Row(
+                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                        height: 40,
+                        width: 60,
+                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: Colors.black)),
+                        child: Text(
+                          "19ps",
+                          style: TextStyle(
+                              fontFamily: "itim",
+                              fontSize: 20,
+                              color: Colors.black),
+                        )),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Container(
+                        height: 40,
+                        width: 60,
+                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: Colors.black)),
+                        child: Text(
+                          "6.8b",
+                          style: TextStyle(
+                              fontFamily: "itim",
+                              fontSize: 20,
+                              color: Colors.black),
+                        )),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                        height: 40,
+                        width: 120,
+                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: Colors.black)),
+                        child: Text(
+                          "258000Tk",
+                          style: TextStyle(
+                              fontFamily: "itim",
+                              fontSize: 20,
+                              color: Colors.black),
+                        ))
+                  ])
+            ])),
         SizedBox(
           height: 20,
         ),
@@ -521,7 +607,7 @@ class _New_sellState extends State<New_sell> {
           margin: EdgeInsets.symmetric(horizontal: 80),
           child: TextField(
             decoration: InputDecoration(
-                labelText: "Total",
+                labelText: "Discount",
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10))),
           ),
@@ -553,18 +639,26 @@ class _New_sellState extends State<New_sell> {
             height: 40.h,
             width: 300.w,
             alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 110),
+            margin: EdgeInsets.symmetric(horizontal: 200),
             decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.2),
+                  spreadRadius: 3,
+                  blurRadius: 3,
+                  offset: Offset(0, 2), // changes position of shadow
+                ),
+              ],
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(10),
+            ),
             child: Text(
               "Done",
               style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
+                  fontSize: 20, fontFamily: "itim", color: Colors.white),
             ),
           ),
-        )
+        ),
       ]),
     );
   }

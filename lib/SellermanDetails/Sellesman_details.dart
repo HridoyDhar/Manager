@@ -1,4 +1,5 @@
 import 'package:admincode/Employedetails/Employe_details.dart';
+import 'package:admincode/Information/information.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -41,7 +42,7 @@ class _Sellesman_detailsState extends State<Sellesman_details> {
             InkWell(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Employe_details()));
+                    MaterialPageRoute(builder: (context) => information()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -88,7 +89,7 @@ class _Sellesman_detailsState extends State<Sellesman_details> {
             InkWell(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Employe_details()));
+                    MaterialPageRoute(builder: (context) => information()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.w),

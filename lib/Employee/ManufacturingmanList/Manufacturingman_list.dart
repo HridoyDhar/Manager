@@ -1,3 +1,4 @@
+import 'package:admincode/Information/information.dart';
 import 'package:admincode/ManufacturingmanDetails/ManufacturingmanDetails.dart';
 import 'package:admincode/Selldetails/Sell_details.dart';
 import 'package:admincode/WorkerDetails/Worker_details.dart';
@@ -40,10 +41,8 @@ class _Manufacturingman_listState extends State<Manufacturingman_list> {
             ),
             InkWell(
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => ManufacturingmanDetails()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => information()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -89,10 +88,8 @@ class _Manufacturingman_listState extends State<Manufacturingman_list> {
             ),
             InkWell(
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => ManufacturingmanDetails()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => information()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.w),

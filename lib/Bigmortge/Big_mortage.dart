@@ -38,18 +38,16 @@ class _Big_mortageState extends State<Big_mortage> {
             height: 20,
           ),
           Container(
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 20),
             height: 40.h,
             width: 300.w,
-            decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue)),
-            child: Text(
-              "Krishna Gold Shop",
-              style: TextStyle(
-                  fontSize: 25, fontFamily: "itim", color: Colors.black),
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            child: TextField(
+              decoration: InputDecoration(
+                labelText: "Shop Name",
+                hintText: "Enter your shop name",
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+              ),
             ),
           ),
           SizedBox(
@@ -122,6 +120,22 @@ class _Big_mortageState extends State<Big_mortage> {
                     Icons.phone,
                     color: Colors.blue,
                   )),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            height: 40,
+            width: 200,
+            margin: EdgeInsets.symmetric(horizontal: 100),
+            alignment: Alignment.center,
+            child: TextField(
+              decoration: InputDecoration(
+                  labelText: "Percent",
+                  hintText: '100=5%',
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10))),
             ),
           ),
           SizedBox(
@@ -205,18 +219,26 @@ class _Big_mortageState extends State<Big_mortage> {
               height: 40.h,
               width: 300.w,
               alignment: Alignment.center,
-              margin: EdgeInsets.symmetric(horizontal: 110),
+              margin: EdgeInsets.symmetric(horizontal: 200),
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Colors.blue)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: Text(
                 "Done",
                 style: TextStyle(
-                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+                    fontSize: 20, fontFamily: "itim", color: Colors.white),
               ),
             ),
-          )
+          ),
         ]));
   }
 }

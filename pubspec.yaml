@@ -49,6 +49,7 @@ dependencies:
   on_click: ^1.1.4
   form_field_validator: ^1.1.0
   validators: ^3.0.0
+  image_form_field: ^0.0.2
  
 
 

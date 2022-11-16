@@ -157,6 +157,22 @@ class _New_employeeState extends State<New_employee> {
           SizedBox(
             height: 20,
           ),
+          Container(
+              height: 40.h,
+              width: 300.w,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              child: TextField(
+                decoration: InputDecoration(
+                    labelText: "Post",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    prefixIcon:
+                        Icon(Icons.card_membership, color: Colors.blue)),
+              )),
+          SizedBox(
+            height: 20,
+          ),
           Center(
             child: InkWell(
               onTap: () {
@@ -164,7 +180,7 @@ class _New_employeeState extends State<New_employee> {
                     MaterialPageRoute(builder: (context) => Home_page()));
               },
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 110.w),
+                margin: EdgeInsets.symmetric(horizontal: 200.w),
                 alignment: Alignment.center,
                 height: 40.h,
                 width: 300.w,
