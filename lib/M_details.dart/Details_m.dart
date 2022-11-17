@@ -255,7 +255,7 @@ class _Details_mState extends State<Details_m> {
             child: Text(
               "Print",
               style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.black),
+                  fontSize: 20, fontFamily: "itim", color: Colors.white),
             ),
           ),
         ),

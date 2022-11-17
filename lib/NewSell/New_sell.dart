@@ -1,4 +1,5 @@
 import 'package:admincode/Homepage/Home_page.dart';
+import 'package:admincode/Imae_picker.dart';
 import 'package:admincode/Mortagelis/Mortage_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -627,6 +628,23 @@ class _New_sellState extends State<New_sell> {
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10))),
           ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Row(
+          children: [
+            SizedBox(
+              width: 250,
+            ),
+            Container(
+              child: Text(
+                "Upload image",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.blue),
+              ),
+            ),
+          ],
         ),
         SizedBox(
           height: 20,

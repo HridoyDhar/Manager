@@ -1,16 +1,15 @@
 import 'package:admincode/Homepage/Home_page.dart';
-import 'package:admincode/Sellprint/Sell_print.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Sell_details extends StatefulWidget {
-  const Sell_details({Key? key}) : super(key: key);
+class Sell_print extends StatefulWidget {
+  const Sell_print({Key? key}) : super(key: key);
 
   @override
-  State<Sell_details> createState() => _Sell_detailsState();
+  State<Sell_print> createState() => _Sell_printState();
 }
 
-class _Sell_detailsState extends State<Sell_details> {
+class _Sell_printState extends State<Sell_print> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -216,19 +215,10 @@ class _Sell_detailsState extends State<Sell_details> {
           SizedBox(
             height: 20,
           ),
-          Container(
-            height: 200.h,
-            width: 200.w,
-            child:
-                Image.asset("assets/vaibhav-nagare-G3Hrl6WzQYQ-unsplash.jpg"),
-          ),
-          SizedBox(
-            height: 20,
-          ),
           InkWell(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Sell_print()));
+                  MaterialPageRoute(builder: (context) => Home_page()));
             },
             child: Container(
               height: 40.h,

@@ -26,9 +26,30 @@ class _Passwrod_verificationState extends State<Passwrod_verification> {
                     Image.asset("assets/105761-verification-code-otp-v2.gif")),
           ),
           SizedBox(
-            height: 200,
+            height: 50,
           ),
           Container(
+            margin: EdgeInsets.symmetric(horizontal: 100),
+            height: 40,
+            width: 300,
+            child: TextField(
+              decoration: InputDecoration(
+                  labelText: "OTP",
+                  hintText: "Enter your OTP",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  prefixIcon: Icon(
+                    Icons.lock,
+                    color: Colors.blue,
+                  )),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 100),
             height: 40,
             width: 300,
             child: TextField(

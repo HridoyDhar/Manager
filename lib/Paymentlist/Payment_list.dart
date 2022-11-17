@@ -100,15 +100,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -146,15 +137,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -192,15 +174,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -238,15 +211,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -284,15 +248,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -330,15 +285,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -376,15 +322,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -422,15 +359,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -468,15 +396,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -514,15 +433,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -560,15 +470,78 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(children: [
+                SizedBox(
+                  width: 50,
+                ),
+                Container(
+                  alignment: Alignment.center,
+                  child: Text(
+                    "5.Rimon          460000Tk",
+                    style: TextStyle(
+                        fontSize: 15.sp,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.black),
+                  ),
+                ),
+              ]),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              height: 40.h,
+              width: 300.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.r),
+              ),
+              child: Row(
+                children: [
                   SizedBox(
-                    width: 20.w,
+                    width: 50,
                   ),
                   Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
+                    alignment: Alignment.center,
+                    child: Text(
+                      "5.Rimon          460000Tk",
+                      style: TextStyle(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -606,15 +579,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),
@@ -652,107 +616,6 @@ class _Payment_listState extends State<Payment_list> {
                           color: Colors.black),
                     ),
                   ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                children: [
-                  SizedBox(
-                    width: 50,
-                  ),
-                  Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      "5.Rimon          460000Tk",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 300.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                children: [
-                  SizedBox(
-                    width: 50,
-                  ),
-                  Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      "5.Rimon          460000Tk",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 20.w,
-                  ),
-                  Container(
-                    height: 20,
-                    width: 40,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    child: Image.asset("assets/visa.png"),
-                  )
                 ],
               ),
             ),

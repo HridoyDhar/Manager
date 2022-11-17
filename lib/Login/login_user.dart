@@ -1,3 +1,4 @@
+import 'package:admincode/Forgetpassword/Forget_password.dart';
 import 'package:admincode/Google/google_singin.dart';
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:admincode/Login/login_user.dart';
@@ -172,10 +173,8 @@ class _login_userState extends State<login_user> {
         ),
         GestureDetector(
           onTap: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => Passwrod_verification()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Forget_password()));
           },
           child: Padding(
             padding: EdgeInsets.only(right: 25.w),
