@@ -304,7 +304,7 @@ class _Mortage_personState extends State<Mortage_person> {
             child: Text(
               "Done",
               style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.white),
+                  fontSize: 20, fontFamily: "itim", color: Colors.black),
             ),
           ),
         ),

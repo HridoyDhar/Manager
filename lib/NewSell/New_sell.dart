@@ -1,4 +1,5 @@
 import 'package:admincode/Homepage/Home_page.dart';
+import 'package:admincode/Mortagelis/Mortage_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -632,8 +633,8 @@ class _New_sellState extends State<New_sell> {
         ),
         InkWell(
           onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Home_page()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Mortage_list()));
           },
           child: Container(
             height: 40.h,
@@ -655,7 +656,7 @@ class _New_sellState extends State<New_sell> {
             child: Text(
               "Done",
               style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.white),
+                  fontSize: 20, fontFamily: "itim", color: Colors.black),
             ),
           ),
         ),
