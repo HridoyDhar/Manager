@@ -148,6 +148,38 @@ class _Sing_UpState extends State<Sing_Up> {
             ),
           ),
           SizedBox(
+            height: 25.h,
+          ),
+          Form(
+            autovalidateMode: AutovalidateMode.onUserInteraction,
+            child: Container(
+              height: 40.h,
+              width: 300.w,
+              margin: EdgeInsets.symmetric(horizontal: 20.w),
+              child: TextField(
+                controller: passwordController,
+                decoration: InputDecoration(
+                    labelText: "OTP",
+                    hintText: "Enter your OTP",
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.r)),
+                    prefixIcon: Icon(
+                      Icons.pin,
+                      color: Color(0xff35396D),
+                    )),
+                // validator.(value){
+                //   if(value!=null&&value.length<7){
+                //     return 'Enter minimum 7 character';
+                //   }
+                //   else{
+                //     return null;
+                //   }
+
+                // }
+              ),
+            ),
+          ),
+          SizedBox(
             height: 20.h,
           ),
           InkWell(

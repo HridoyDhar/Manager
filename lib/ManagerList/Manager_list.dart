@@ -91,7 +91,7 @@ class _Manager_listState extends State<Manager_list> {
             InkWell(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => information()));
+                    MaterialPageRoute(builder: (context) => Manager_details()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.w),

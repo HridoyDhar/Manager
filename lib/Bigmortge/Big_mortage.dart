@@ -1,4 +1,5 @@
 import 'package:admincode/Homepage/Home_page.dart';
+import 'package:admincode/Oldmortage/Old_mortage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -217,7 +218,7 @@ class _Big_mortageState extends State<Big_mortage> {
             },
             child: Container(
               height: 40.h,
-              width: 300.w,
+              width: 100.w,
               alignment: Alignment.center,
               margin: EdgeInsets.symmetric(horizontal: 200),
               decoration: BoxDecoration(
@@ -239,6 +240,35 @@ class _Big_mortageState extends State<Big_mortage> {
               ),
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            alignment: Alignment.centerLeft,
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 50,
+                ),
+                Text(
+                  "You need to old mortage .",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
+                InkWell(
+                  onTap: (() {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Old_mortage()));
+                  }),
+                  child: Text(
+                    "Click here",
+                    style: TextStyle(
+                        fontFamily: "itim", fontSize: 20, color: Colors.blue),
+                  ),
+                ),
+              ],
+            ),
+          )
         ]));
   }
 }

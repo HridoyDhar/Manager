@@ -203,6 +203,20 @@ class _login_userState extends State<login_user> {
           ),
         ),
         SizedBox(
+          height: 20,
+        ),
+        Center(
+          child: Container(
+            child: Text(
+              "Or",
+              style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 16,
+                  color: Colors.black),
+            ),
+          ),
+        ),
+        SizedBox(
           height: 20.h,
         ),
         // ElevatedButton(

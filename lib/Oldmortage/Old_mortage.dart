@@ -1,17 +1,45 @@
+import 'dart:io';
+
 import 'package:admincode/Bigmortge/Big_mortage.dart';
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:admincode/Mortagelis/Mortage_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:image_picker/image_picker.dart';
 
-class New_mortage extends StatefulWidget {
-  const New_mortage({Key? key}) : super(key: key);
+class Old_mortage extends StatefulWidget {
+  const Old_mortage({Key? key}) : super(key: key);
 
   @override
-  State<New_mortage> createState() => _New_mortageState();
+  State<Old_mortage> createState() => _Old_mortageState();
 }
 
-class _New_mortageState extends State<New_mortage> {
+class _Old_mortageState extends State<Old_mortage> {
+  File? _image;
+
+  final picker = ImagePicker();
+
+  // void openCamera() async {
+  //   var _imageCamera = await picker.getImage(source: ImageSource.camera);
+  //   setState(() {
+  //     _image= File(_imageCamera.path);
+  //   });
+  //   Navigator.of(context).pop();
+  // }
+  // PickedFile? imageFile = null;
+
+  Future getImage() async {
+    final pickedFile = await picker.getImage(source: ImageSource.gallery);
+    setState(() {
+      if (pickedFile != null) {
+        _image = File(pickedFile.path);
+        // _image = File(_imageCamera.path);
+      } else {
+        print('No image selected');
+      }
+    });
+  }
+
   DateTime currentDate = DateTime.now();
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? pickedDate = await showDatePicker(
@@ -466,6 +494,47 @@ class _New_mortageState extends State<New_mortage> {
           height: 20,
         ),
         InkWell(
+          onTap: (() => getImage()),
+          child: Container(
+            height: 50,
+            width: 200,
+            margin: EdgeInsets.symmetric(horizontal: 100),
+            decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xffF7FAFF)),
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "Upload image",
+                  style: TextStyle(
+                      fontSize: 20, fontFamily: "itim", color: Colors.blue),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Icon(
+                  Icons.camera,
+                  color: Colors.blue,
+                )
+              ],
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        InkWell(
           onTap: () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => Mortage_list()));
@@ -494,35 +563,6 @@ class _New_mortageState extends State<New_mortage> {
             ),
           ),
         ),
-        SizedBox(
-          height: 20,
-        ),
-        Container(
-          alignment: Alignment.centerLeft,
-          child: Row(
-            children: [
-              SizedBox(
-                width: 50,
-              ),
-              Text(
-                "You need to other's mortage .",
-                style: TextStyle(
-                    fontFamily: "itim", fontSize: 20, color: Colors.black),
-              ),
-              InkWell(
-                onTap: (() {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Big_mortage()));
-                }),
-                child: Text(
-                  "Click here",
-                  style: TextStyle(
-                      fontFamily: "itim", fontSize: 20, color: Colors.blue),
-                ),
-              ),
-            ],
-          ),
-        )
       ]),
     );
   }

@@ -56,6 +56,7 @@ dependencies:
   path_provider: ^2.0.11
   path: ^1.8.2
   image_picker: ^0.8.6
+  flutter_profile_picture: ^2.0.0
   # image_form_field: ^0.0.2
  
 

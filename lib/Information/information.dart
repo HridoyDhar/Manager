@@ -20,17 +20,25 @@ class _informationState extends State<information> {
             height: 30,
           ),
           Container(
+            height: 200,
+            width: 200,
+            decoration: BoxDecoration(shape: BoxShape.circle),
+            child: Image.asset("assets/man.png"),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
             alignment: Alignment.centerLeft,
             margin: EdgeInsets.symmetric(horizontal: 20),
             height: 20.h,
             width: 700.w,
             decoration: BoxDecoration(
-              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text(" Mr.Rahul",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.blue)),
+                    fontSize: 20, fontFamily: "itim", color: Colors.blue)),
           ),
           SizedBox(
             height: 20,
@@ -41,12 +49,11 @@ class _informationState extends State<information> {
             height: 20.h,
             width: 200.w,
             decoration: BoxDecoration(
-              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text("Mew town area ,Chittagong",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.blue)),
+                    fontSize: 20, fontFamily: "itim", color: Colors.blue)),
           ),
           SizedBox(
             height: 20,
@@ -57,12 +64,11 @@ class _informationState extends State<information> {
             height: 20.h,
             width: 200.w,
             decoration: BoxDecoration(
-              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text("013743995723",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.blue)),
+                    fontSize: 20, fontFamily: "itim", color: Colors.blue)),
           ),
           SizedBox(
             height: 20,
@@ -73,12 +79,11 @@ class _informationState extends State<information> {
             height: 20.h,
             width: 200.w,
             decoration: BoxDecoration(
-              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text("Join date:03-04-2000",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.redAccent)),
+                    fontSize: 20, fontFamily: "itim", color: Colors.redAccent)),
           ),
           SizedBox(
             height: 20,
@@ -89,12 +94,11 @@ class _informationState extends State<information> {
             height: 20.h,
             width: 200.w,
             decoration: BoxDecoration(
-              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text("Nid Number: 243435343",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.redAccent)),
+                    fontSize: 20, fontFamily: "itim", color: Colors.redAccent)),
           ),
           SizedBox(
             height: 20,
@@ -105,12 +109,11 @@ class _informationState extends State<information> {
             height: 20.h,
             width: 200.w,
             decoration: BoxDecoration(
-              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text("Nid Number: 243435343",
+            child: Text(" Father nid Number: 243435343",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.redAccent)),
+                    fontSize: 20, fontFamily: "itim", color: Colors.redAccent)),
           ),
           SizedBox(
             height: 20,
@@ -121,12 +124,25 @@ class _informationState extends State<information> {
             height: 20.h,
             width: 200.w,
             decoration: BoxDecoration(
-              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text("Nid Number: 243435343",
+            child: Text("Mothter nid Number: 243435343",
                 style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.redAccent)),
+                    fontSize: 20, fontFamily: "itim", color: Colors.redAccent)),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Center(
+            child: Container(
+                alignment: Alignment.centerLeft,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                height: 200.h,
+                width: 200.w,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Image.asset("assets/driving-license.png")),
           ),
         ],
       ),
