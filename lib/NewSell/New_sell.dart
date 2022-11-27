@@ -1,8 +1,13 @@
+import 'dart:io';
+
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:admincode/Imae_picker.dart';
 import 'package:admincode/Mortagelis/Mortage_list.dart';
+import 'package:admincode/SellList/Sell_list.dart';
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:image_picker/image_picker.dart';
 
 class New_sell extends StatefulWidget {
   const New_sell({Key? key}) : super(key: key);
@@ -12,6 +17,31 @@ class New_sell extends StatefulWidget {
 }
 
 class _New_sellState extends State<New_sell> {
+  File? _image;
+
+  final picker = ImagePicker();
+
+  // void openCamera() async {
+  //   var _imageCamera = await picker.getImage(source: ImageSource.camera);
+  //   setState(() {
+  //     _image= File(_imageCamera.path);
+  //   });
+  //   Navigator.of(context).pop();
+  // }
+  // PickedFile? imageFile = null;
+
+  Future getImage() async {
+    final pickedFile = await picker.getImage(source: ImageSource.gallery);
+    setState(() {
+      if (pickedFile != null) {
+        _image = File(pickedFile.path);
+        // _image = File(_imageCamera.path);
+      } else {
+        print('No image selected');
+      }
+    });
+  }
+
   DateTime currentDate = DateTime.now();
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? pickedDate = await showDatePicker(
@@ -31,6 +61,7 @@ class _New_sellState extends State<New_sell> {
   // The maximum scroll offset
   // In other words, this means the user has reached the bottom of the list view
   double? _maxOffset;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -632,45 +663,68 @@ class _New_sellState extends State<New_sell> {
         SizedBox(
           height: 20,
         ),
-        Row(
-          children: [
-            SizedBox(
-              width: 250,
+        InkWell(
+          onTap: (() => getImage()),
+          child: Container(
+            height: 50,
+            width: 200,
+            margin: EdgeInsets.symmetric(horizontal: 100),
+            decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xffF7FAFF)),
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "Upload image",
+                  style: TextStyle(
+                      fontSize: 20, fontFamily: "itim", color: Colors.blue),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Icon(
+                  Icons.camera,
+                  color: Colors.blue,
+                )
+              ],
             ),
-            Container(
-              child: Text(
-                "Upload image",
-                style: TextStyle(
-                    fontSize: 20, fontFamily: "itim", color: Colors.blue),
-              ),
-            ),
-          ],
+          ),
         ),
         SizedBox(
           height: 20,
         ),
         InkWell(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Mortage_list()));
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Sell_list()));
           },
           child: Container(
-            height: 40.h,
-            width: 300.w,
             alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 200),
+            height: 30,
+            width: 100,
+            margin: EdgeInsets.symmetric(horizontal: 100),
             decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.2),
-                  spreadRadius: 3,
-                  blurRadius: 3,
-                  offset: Offset(0, 2), // changes position of shadow
-                ),
-              ],
-              color: Colors.blue,
-              borderRadius: BorderRadius.circular(10),
-            ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xffF7FAFF)),
             child: Text(
               "Done",
               style: TextStyle(
@@ -682,3 +736,12 @@ class _New_sellState extends State<New_sell> {
     );
   }
 }
+
+// void _openGallery(BuildContext context) async {
+//   final PickedFile = await ImagePicker().getImage(source: ImageSource.camera);
+
+//   setState(() {
+//     imageFile = PickedFile!;
+//   });
+//   Navigator.pop(context);
+// }

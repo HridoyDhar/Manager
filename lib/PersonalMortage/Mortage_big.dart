@@ -1,16 +1,18 @@
 import 'package:admincode/Homepage/Home_page.dart';
+import 'package:admincode/MortageOld/Mortage_oldList.dart';
 import 'package:admincode/Mortageperson/Mortage_person.dart';
+import 'package:admincode/MortgeBigpay/MortageBig_payment.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Mortage_list extends StatefulWidget {
-  const Mortage_list({Key? key}) : super(key: key);
+class Mortage_big extends StatefulWidget {
+  const Mortage_big({Key? key}) : super(key: key);
 
   @override
-  State<Mortage_list> createState() => _Mortage_listState();
+  State<Mortage_big> createState() => _Mortage_bigState();
 }
 
-class _Mortage_listState extends State<Mortage_list> {
+class _Mortage_bigState extends State<Mortage_big> {
   DateTime currentDate = DateTime.now();
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? pickedDate = await showDatePicker(
@@ -73,8 +75,10 @@ class _Mortage_listState extends State<Mortage_list> {
             ),
             InkWell(
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Mortage_person()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => MortageBig_payment()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -120,8 +124,10 @@ class _Mortage_listState extends State<Mortage_list> {
             ),
             InkWell(
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Mortage_person()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => MortageBig_payment()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.w),

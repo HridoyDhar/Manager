@@ -1,5 +1,6 @@
 import 'package:admincode/Bigmortge/Big_mortage.dart';
 import 'package:admincode/Homepage/Home_page.dart';
+import 'package:admincode/Mortagelis/Mortage_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -141,7 +142,7 @@ class _New_mortageState extends State<New_mortage> {
               // mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(
-                  width: 120,
+                  width: 50,
                 ),
                 Container(
                   height: 40,
@@ -162,295 +163,290 @@ class _New_mortageState extends State<New_mortage> {
           height: 20,
         ),
         Container(
-            width: 400,
             child: Column(children: [
-              Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 60,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Name",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Weight",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                  ])
-            ])),
+          Row(
+
+              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+              children: [
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Name",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Weight",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+              ])
+        ])),
         SizedBox(
           height: 20,
         ),
         Container(
-            width: 400,
             child: Column(children: [
-              Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 60,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Name",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Weight",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                  ])
-            ])),
+          Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Name",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Weight",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+              ])
+        ])),
         SizedBox(
           height: 20,
         ),
         Container(
-            width: 400,
             child: Column(children: [
-              Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 60,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Name",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Weight",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                  ])
-            ])),
+          Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Name",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Weight",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+              ])
+        ])),
         SizedBox(
           height: 20,
         ),
         Container(
-            width: 400,
             child: Column(children: [
-              Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 60,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Name",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Weight",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                  ])
-            ])),
+          Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Name",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Weight",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+              ])
+        ])),
         SizedBox(
           height: 20,
         ),
         Container(
-            width: 400,
             child: Column(children: [
-              Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 60,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Name",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Weight",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                  ])
-            ])),
+          Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Name",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Weight",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+              ])
+        ])),
         SizedBox(
           height: 20,
         ),
         Container(
-            width: 400,
             child: Column(children: [
-              Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 60,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Name",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                      height: 40,
-                      width: 150,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      alignment: Alignment.center,
-                      child: TextField(
-                        decoration: InputDecoration(
-                            labelText: "Weight",
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10))),
-                      ),
-                    ),
-                  ])
-            ])),
+          Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Name",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 40,
+                  width: 100,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  alignment: Alignment.center,
+                  child: TextField(
+                    decoration: InputDecoration(
+                        labelText: "Weight",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10))),
+                  ),
+                ),
+              ])
+        ])),
         SizedBox(
           height: 20,
         ),
         Container(
-            width: 400,
             child: Column(children: [
-              Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    SizedBox(
-                      width: 60,
-                    ),
-                    Container(
-                        height: 40,
-                        width: 150,
-                        margin: EdgeInsets.symmetric(horizontal: 20),
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(color: Colors.black)),
-                        child: Text(
-                          "19ps",
-                          style: TextStyle(
-                              fontFamily: "itim",
-                              fontSize: 20,
-                              color: Colors.black),
-                        )),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Container(
-                        height: 40,
-                        width: 150,
-                        margin: EdgeInsets.symmetric(horizontal: 20),
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(color: Colors.black)),
-                        child: Text(
-                          "6.4b",
-                          style: TextStyle(
-                              fontFamily: "itim",
-                              fontSize: 20,
-                              color: Colors.black),
-                        )),
-                  ])
-            ])),
+          Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                  width: 30,
+                ),
+                Container(
+                    height: 40,
+                    width: 100,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: Text(
+                      "19ps",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black),
+                    )),
+                SizedBox(
+                  width: 10,
+                ),
+                Container(
+                    height: 40,
+                    width: 100,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: Text(
+                      "6.4b",
+                      style: TextStyle(
+                          fontFamily: "itim",
+                          fontSize: 20,
+                          color: Colors.black),
+                    )),
+              ])
+        ])),
         SizedBox(
           height: 20,
         ),
@@ -461,7 +457,7 @@ class _New_mortageState extends State<New_mortage> {
           margin: EdgeInsets.symmetric(horizontal: 80),
           child: TextField(
             decoration: InputDecoration(
-                labelText: "Total",
+                labelText: "Money",
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10))),
           ),
@@ -471,30 +467,29 @@ class _New_mortageState extends State<New_mortage> {
         ),
         InkWell(
           onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Home_page()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Mortage_list()));
           },
           child: Container(
-            height: 40.h,
-            width: 300.w,
             alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 200),
+            height: 30,
+            width: 100,
+            margin: EdgeInsets.symmetric(horizontal: 100),
             decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.2),
-                  spreadRadius: 3,
-                  blurRadius: 3,
-                  offset: Offset(0, 2), // changes position of shadow
-                ),
-              ],
-              color: Colors.blue,
-              borderRadius: BorderRadius.circular(10),
-            ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
+                  ),
+                ],
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xffF7FAFF)),
             child: Text(
               "Done",
               style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.white),
+                  fontSize: 20, fontFamily: "itim", color: Colors.black),
             ),
           ),
         ),

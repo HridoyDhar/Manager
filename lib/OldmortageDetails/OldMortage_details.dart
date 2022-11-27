@@ -3,14 +3,14 @@ import 'package:admincode/M_details.dart/Details_m.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Mortage_person extends StatefulWidget {
-  const Mortage_person({Key? key}) : super(key: key);
+class OldMortage_details extends StatefulWidget {
+  const OldMortage_details({Key? key}) : super(key: key);
 
   @override
-  State<Mortage_person> createState() => _Mortage_personState();
+  State<OldMortage_details> createState() => _OldMortage_detailsState();
 }
 
-class _Mortage_personState extends State<Mortage_person> {
+class _OldMortage_detailsState extends State<OldMortage_details> {
   DateTime currentDate = DateTime.now();
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? pickedDate = await showDatePicker(

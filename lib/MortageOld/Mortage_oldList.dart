@@ -1,16 +1,18 @@
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:admincode/Mortageperson/Mortage_person.dart';
+import 'package:admincode/Oldandnew/OldandNew_mortage.dart';
+import 'package:admincode/OldmortageDetails/OldMortage_details.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Mortage_list extends StatefulWidget {
-  const Mortage_list({Key? key}) : super(key: key);
+class Mortage_oldlist extends StatefulWidget {
+  const Mortage_oldlist({Key? key}) : super(key: key);
 
   @override
-  State<Mortage_list> createState() => _Mortage_listState();
+  State<Mortage_oldlist> createState() => _Mortage_oldlistState();
 }
 
-class _Mortage_listState extends State<Mortage_list> {
+class _Mortage_oldlistState extends State<Mortage_oldlist> {
   DateTime currentDate = DateTime.now();
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? pickedDate = await showDatePicker(
@@ -73,8 +75,10 @@ class _Mortage_listState extends State<Mortage_list> {
             ),
             InkWell(
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Mortage_person()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => OldMortage_details()));
               },
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.w),

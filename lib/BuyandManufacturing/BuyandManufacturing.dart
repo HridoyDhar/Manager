@@ -144,7 +144,7 @@ class _BuyandManufacturingState extends State<BuyandManufacturing> {
                 color: Color(0xffF7FAFF),
               ),
               child: Text(
-                "Products",
+                "Products and Money",
                 style: TextStyle(
                     fontFamily: "itim", fontSize: 20, color: Colors.black),
               ),

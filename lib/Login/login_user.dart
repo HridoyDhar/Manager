@@ -32,62 +32,8 @@ class login_user extends StatefulWidget {
 class _login_userState extends State<login_user> {
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
-  ////
-  // Future login() async {
-  //   final GoogleSignInAccount googleSignInAccount =
-  //       await GoogleSignIn().login();
-  //   final GoogleSignInAuthentication googleSignInAuthentication =
-  //       await googleSignInAccount.authentication;
-  //   AuthCredential credential = GoogleAuthProvider.getCredential(
-  //       idToken: googleSignInAuthentication.idToken,
-  //       accesstoken: googleSignInAuthentication.accessToken);
-  //   AuthResult result =
-  //       await FirebaseAuth.instance.signInWithCredential(credential);
-  //   if (User != null) {
-  //     Navigator.push(
-  //         context, MaterialPageRoute(builder: (context) => Home_page()));
-  //   }
-  // }
-
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
-
-  //////
-  // final _form = GlobalKey<FormState>();
-  // bool _isValid = false;
-  // void _saveForm() {
-  //   setState(() {
-  //     setState(() {
-  //       _isValid = _form.currentState!.validate();
-  //     });
-  //   });
-  // }
-  // ////
-
-  // static Future<User?> loginUsingEmailPassword(
-  //     {required String email,
-  //     required String pasword,
-  //     required BuildContext context}) async {
-  //   FirebaseAuth auth = FirebaseAuth.instance;
-  //   User? user;
-  //   try {
-  //     UserCredential userCredential = await auth.signInWithEmailAndPassword(
-  //         email: email, password: pasword);
-  //     user = userCredential.user;
-  //   } on FirebaseAuthException catch (e) {
-  //     if (e.code == "User-not-found") {
-  //       print("No user found for that email");
-  //     }
-  //   }
-  //   return user;
-  // }
-
-  // @override
-  // void dispose() {
-  //   emailController.dispose();
-  //   passwordController.dispose();
-  //   super.dispose();
-  // }
 
 ///////
   @override
@@ -214,27 +160,6 @@ class _login_userState extends State<login_user> {
           ),
         ),
 
-        //////
-        // SizedBox(
-        //   height: 20,
-        // ),
-        // RichText(
-        //     text: TextSpan(
-        //         style: TextStyle(
-        //           fontFamily: "itim",
-        //         ),
-        //         text: ' I have no account?',
-        //         children: [
-        //       TextSpan(
-        //           recognizer: TapGestureRecognizer()
-        //             ..onTap = widget.onClickedlogin,
-        //           text: 'SingUp ',
-        //           style: TextStyle(
-        //               decoration: TextDecoration.underline,
-        //               color: Theme.of(context).colorScheme.secondary))
-        //     ])),
-        ///////
-
         SizedBox(
           height: 20.h,
         ),
@@ -242,9 +167,6 @@ class _login_userState extends State<login_user> {
           onTap: (() {
             Navigator.push(
                 context, MaterialPageRoute(builder: (context) => Sing_Up()));
-            // final provider =
-            //     Provider.of<googlesinginprovider>(context, listen: false);
-            // provider.login();
           }),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -328,19 +250,3 @@ class _login_userState extends State<login_user> {
     );
   }
 }
-
-// Future login() async {
-//   var emailController;
-//   var passwordController;
-//   // showDialog(
-//   //     context: context,
-//   //     builder: (context) => Center(child: CircularProgressIndicator()));
-//   try {
-//     await FirebaseAuth.instance.signInWithEmailAndPassword(
-//         email: emailController.text.trim(),
-//         password: passwordController.text.trim());
-//   } on Exception catch (e) {
-//     // TODO
-//     navigatorKey.currentState?.popUntil((route) => route.isFirst);
-//   }
-// }

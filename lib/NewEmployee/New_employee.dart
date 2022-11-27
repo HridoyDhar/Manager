@@ -1,3 +1,4 @@
+import 'package:admincode/Employee/Employee_list.dart';
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -35,9 +36,8 @@ class _New_employeeState extends State<New_employee> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: ListView(
-        children: [
+        backgroundColor: Colors.white,
+        body: ListView(children: [
           SizedBox(
             height: 20,
           ),
@@ -173,40 +173,34 @@ class _New_employeeState extends State<New_employee> {
           SizedBox(
             height: 20,
           ),
-          Center(
-            child: InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Home_page()));
-              },
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 200.w),
-                alignment: Alignment.center,
-                height: 40.h,
-                width: 300.w,
-                decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.2),
-                        spreadRadius: 3,
-                        blurRadius: 3,
-                        offset: Offset(0, 2), // changes position of shadow
-                      ),
-                    ],
-                    borderRadius: BorderRadius.circular(10.r),
-                    color: Color(0xffF7FAFF)),
-                child: Text(
-                  "Done",
-                  style: TextStyle(
-                      fontSize: 15.sp,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.black),
-                ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Employee_list()));
+            },
+            child: Container(
+              alignment: Alignment.center,
+              height: 30,
+              width: 100,
+              margin: EdgeInsets.symmetric(horizontal: 100),
+              decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
+                    ),
+                  ],
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color(0xffF7FAFF)),
+              child: Text(
+                "Done",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
               ),
             ),
-          )
-        ],
-      ),
-    );
+          ),
+        ]));
   }
 }

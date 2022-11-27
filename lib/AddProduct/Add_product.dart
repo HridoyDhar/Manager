@@ -18,6 +18,39 @@ class _Add_productState extends State<Add_product> {
           SizedBox(
             height: 20,
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              SizedBox(
+                width: 10,
+              ),
+              Container(
+                child: Text(
+                  "Enter your money:",
+                  style: TextStyle(
+                      fontFamily: "itim", fontSize: 20, color: Colors.black),
+                ),
+              ),
+              SizedBox(
+                width: 2,
+              ),
+              Container(
+                height: 40,
+                width: 100,
+                margin: EdgeInsets.symmetric(horizontal: 100),
+                alignment: Alignment.center,
+                child: TextField(
+                  decoration: InputDecoration(
+                      labelText: "money",
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10))),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 20,
+          ),
           Container(
             height: 40,
             width: 200,

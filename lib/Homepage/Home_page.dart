@@ -7,6 +7,7 @@ import 'package:admincode/Myproducet/Producet_list.dart';
 import 'package:admincode/NewEmployee/New_employee.dart';
 import 'package:admincode/NewSell/New_sell.dart';
 import 'package:admincode/Newmortage/New_mortage.dart';
+import 'package:admincode/Oldandnew/OldandNew_mortage.dart';
 import 'package:admincode/Paymentlist/Payment_list.dart';
 import 'package:admincode/SellList/Sell_list.dart';
 import 'package:admincode/Worldwideprice/WorldWide_price.dart';
@@ -88,7 +89,7 @@ class _Home_pageState extends State<Home_page> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Mortage_list()));
+                              builder: (context) => OldandNew_mortage()));
                     },
                     child: Container(
                       alignment: Alignment.center,

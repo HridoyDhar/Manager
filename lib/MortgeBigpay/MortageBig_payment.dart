@@ -3,14 +3,14 @@ import 'package:admincode/M_details.dart/Details_m.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Mortage_person extends StatefulWidget {
-  const Mortage_person({Key? key}) : super(key: key);
+class MortageBig_payment extends StatefulWidget {
+  const MortageBig_payment({Key? key}) : super(key: key);
 
   @override
-  State<Mortage_person> createState() => _Mortage_personState();
+  State<MortageBig_payment> createState() => _MortageBig_paymentState();
 }
 
-class _Mortage_personState extends State<Mortage_person> {
+class _MortageBig_paymentState extends State<MortageBig_payment> {
   DateTime currentDate = DateTime.now();
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? pickedDate = await showDatePicker(
@@ -151,102 +151,6 @@ class _Mortage_personState extends State<Mortage_person> {
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
             // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('2')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('2')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('3')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('1')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('4')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('1')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('5')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('6')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('7')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('8')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('9')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('10')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('')),
-            DataCell(Text('Money')),
-            DataCell(Text('...')),
-            // DataCell(Text('2500000Tk')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('')),
-            DataCell(Text('Interest')),
-            DataCell(Text('...')),
-            // DataCell(Text('...')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('')),
-            DataCell(Text('Total')),
-            DataCell(Text('...')),
-            // DataCell(Text('...')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('Date')),
-            DataCell(Text('Give')),
-            DataCell(Text('...')),
-            // DataCell(Text('...')),
           ]),
           DataRow(cells: [
             DataCell(Text('')),
