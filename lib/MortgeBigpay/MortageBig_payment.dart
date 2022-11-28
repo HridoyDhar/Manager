@@ -1,5 +1,8 @@
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:admincode/M_details.dart/Details_m.dart';
+import 'package:admincode/MortageOld/Payment.dart';
+import 'package:admincode/MortgeBigpay/Big_print.dart';
+import 'package:admincode/MortgeBigpay/Payment.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -152,88 +155,71 @@ class _MortageBig_paymentState extends State<MortageBig_payment> {
             DataCell(Text('1.6b')),
             // DataCell(Text('680900Tk')),
           ]),
-          DataRow(cells: [
-            DataCell(Text('')),
-            DataCell(Text('Total')),
-            DataCell(Text('...')),
-            // DataCell(Text('...')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('')),
-            DataCell(Text('Interest')),
-            DataCell(Text('...')),
-            // DataCell(Text('...')),
-          ]),
-          DataRow(cells: [
-            DataCell(Text('Date')),
-            DataCell(Text('Give')),
-            DataCell(Text('...')),
-            // DataCell(Text('...')),
-          ]),
         ]),
-        SizedBox(
-          height: 20,
-        ),
-        SizedBox(
-          height: 20,
-        ),
-        Container(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              Text(currentDate.toString()),
-              ElevatedButton(
-                onPressed: () => _selectDate(context),
-                child: Text('Select date'),
-              ),
-            ],
-          ),
-        ),
-        SizedBox(
-          height: 5,
-        ),
-        Container(
-          height: 40,
-          width: 150,
-          margin: EdgeInsets.symmetric(horizontal: 20),
-          alignment: Alignment.center,
-          child: TextField(
-            decoration: InputDecoration(
-                labelText: "Pay",
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10))),
-          ),
-        ),
         SizedBox(
           height: 20,
         ),
         InkWell(
           onTap: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Details_m()));
+                context, MaterialPageRoute(builder: (context) => Big_paymet()));
           },
-          child: Container(
-            height: 40.h,
-            width: 300.w,
-            alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 200),
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.2),
-                  spreadRadius: 3,
-                  blurRadius: 3,
-                  offset: Offset(0, 2), // changes position of shadow
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                height: 40.h,
+                width: 100.w,
+                alignment: Alignment.center,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
+                    ),
+                  ],
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(10),
                 ),
-              ],
-              color: Colors.blue,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text(
-              "Done",
-              style: TextStyle(
-                  fontSize: 20, fontFamily: "itim", color: Colors.white),
-            ),
+                child: Text(
+                  "Pay",
+                  style: TextStyle(
+                      fontSize: 20, fontFamily: "itim", color: Colors.white),
+                ),
+              ),
+              InkWell(
+                onTap: (() {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Big_print()));
+                }),
+                child: Container(
+                  height: 40.h,
+                  width: 100.w,
+                  alignment: Alignment.center,
+                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.2),
+                        spreadRadius: 3,
+                        blurRadius: 3,
+                        offset: Offset(0, 2), // changes position of shadow
+                      ),
+                    ],
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Text(
+                    "Print",
+                    style: TextStyle(
+                        fontSize: 20, fontFamily: "itim", color: Colors.white),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ]),

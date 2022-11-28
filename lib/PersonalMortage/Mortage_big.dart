@@ -13,6 +13,7 @@ class Mortage_big extends StatefulWidget {
 }
 
 class _Mortage_bigState extends State<Mortage_big> {
+  bool? isChecked = false;
   DateTime currentDate = DateTime.now();
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? pickedDate = await showDatePicker(
@@ -104,17 +105,30 @@ class _Mortage_bigState extends State<Mortage_big> {
                       color: Colors.greenAccent,
                     ),
                     SizedBox(
-                      width: 15.w,
+                      width: 5.w,
                     ),
                     Container(
                       child: Text(
-                        "1.Mr krishna                                               569000",
+                        "1.Mr krishna                569000",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
                             color: Colors.black),
                       ),
                     ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Checkbox(
+                      value: isChecked,
+                      activeColor: Colors.blue,
+                      tristate: true,
+                      onChanged: (newBool) {
+                        setState(() {
+                          isChecked = newBool;
+                        });
+                      },
+                    )
                   ],
                 ),
               ),
@@ -153,205 +167,30 @@ class _Mortage_bigState extends State<Mortage_big> {
                       color: Colors.greenAccent,
                     ),
                     SizedBox(
-                      width: 15.w,
+                      width: 5.w,
                     ),
                     Container(
                       child: Text(
-                        "2.Mr krishna                                               569000",
+                        "2.Mr krishna                          569000",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,
                             color: Colors.black),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Mortage_person()));
-              },
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20.w),
-                height: 40.h,
-                width: 200.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 3,
-                      blurRadius: 3,
-                      offset: Offset(0, 2), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10.r),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.person,
-                      color: Colors.greenAccent,
                     ),
                     SizedBox(
-                      width: 15.w,
+                      width: 5,
                     ),
-                    Container(
-                      child: Text(
-                        "3.Mr krishna                                               569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Mortage_person()));
-              },
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20.w),
-                height: 40.h,
-                width: 200.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 3,
-                      blurRadius: 3,
-                      offset: Offset(0, 2), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10.r),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.person,
-                      color: Colors.greenAccent,
-                    ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "4.Mr krishna                                               569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Mortage_person()));
-              },
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20.w),
-                height: 40.h,
-                width: 200.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 3,
-                      blurRadius: 3,
-                      offset: Offset(0, 2), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10.r),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.person,
-                      color: Colors.greenAccent,
-                    ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "5.Mr krishna                                               569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Mortage_person()));
-              },
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 20.w),
-                height: 40.h,
-                width: 200.w,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 3,
-                      blurRadius: 3,
-                      offset: Offset(0, 2), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10.r),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.person,
-                      color: Colors.greenAccent,
-                    ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "6.Mr krishna                                               569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
-                    ),
+                    Checkbox(
+                      value: isChecked,
+                      activeColor: Colors.blue,
+                      tristate: true,
+                      onChanged: (newBool) {
+                        setState(() {
+                          isChecked = newBool;
+                        });
+                      },
+                    )
                   ],
                 ),
               ),

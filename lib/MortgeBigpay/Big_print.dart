@@ -1,18 +1,21 @@
+import 'package:admincode/Bigmortge/Big_mortage.dart';
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:admincode/M_details.dart/Details_m.dart';
 import 'package:admincode/MortageOld/Payment.dart';
-import 'package:admincode/OldmortageDetails/Old_payment.dart';
+import 'package:admincode/Mortagelis/Mortage_list.dart';
+import 'package:admincode/MortgeBigpay/Payment.dart';
+import 'package:admincode/Oldandnew/OldandNew_mortage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class OldMortage_details extends StatefulWidget {
-  const OldMortage_details({Key? key}) : super(key: key);
+class Big_print extends StatefulWidget {
+  const Big_print({Key? key}) : super(key: key);
 
   @override
-  State<OldMortage_details> createState() => _OldMortage_detailsState();
+  State<Big_print> createState() => _Big_printState();
 }
 
-class _OldMortage_detailsState extends State<OldMortage_details> {
+class _Big_printState extends State<Big_print> {
   DateTime currentDate = DateTime.now();
   Future<void> _selectDate(BuildContext context) async {
     final DateTime? pickedDate = await showDatePicker(
@@ -156,141 +159,51 @@ class _OldMortage_detailsState extends State<OldMortage_details> {
               // DataCell(Text('680900Tk')),
             ]),
             DataRow(cells: [
-              DataCell(Text('2')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
+              DataCell(Text('')),
+              DataCell(Text('Total')),
+              DataCell(Text('12772')),
+              // DataCell(Text('...')),
             ]),
             DataRow(cells: [
-              DataCell(Text('2')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
+              DataCell(Text('')),
+              DataCell(Text('Interest')),
+              DataCell(Text('209930')),
+              // DataCell(Text('...')),
             ]),
             DataRow(cells: [
-              DataCell(Text('3')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('1')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('4')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('1')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('5')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('6')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('7')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('8')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('9')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
-            ]),
-            DataRow(cells: [
-              DataCell(Text('10')),
-              DataCell(Text('Neckless')),
-              DataCell(Text('1.6b')),
-              // DataCell(Text('680900Tk')),
+              DataCell(Text('Date')),
+              DataCell(Text('Give')),
+              DataCell(Text('103823')),
+              // DataCell(Text('...')),
             ]),
           ]),
           InkWell(
-            onTap: () {
+            onTap: (() {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Old_payment()));
-            },
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  height: 40.h,
-                  width: 100.w,
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.2),
-                        spreadRadius: 3,
-                        blurRadius: 3,
-                        offset: Offset(0, 2), // changes position of shadow
-                      ),
-                    ],
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(10),
+                  MaterialPageRoute(builder: (context) => OldandNew_mortage()));
+            }),
+            child: Container(
+              height: 40.h,
+              width: 300.w,
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 200),
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    spreadRadius: 3,
+                    blurRadius: 3,
+                    offset: Offset(0, 2), // changes position of shadow
                   ),
-                  child: Text(
-                    "Pay",
-                    style: TextStyle(
-                        fontSize: 20, fontFamily: "itim", color: Colors.white),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Old_payment()));
-                  },
-                  child: Container(
-                    height: 40.h,
-                    width: 100.w,
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 20),
-                    decoration: BoxDecoration(
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.withOpacity(0.2),
-                          spreadRadius: 3,
-                          blurRadius: 3,
-                          offset: Offset(0, 2), // changes position of shadow
-                        ),
-                      ],
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text(
-                      "Print",
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontFamily: "itim",
-                          color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
+                ],
+                color: Colors.blue,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Text(
+                "Print",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.white),
+              ),
             ),
           ),
         ],

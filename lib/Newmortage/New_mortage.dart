@@ -421,7 +421,7 @@ class _New_mortageState extends State<New_mortage> {
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: Colors.black)),
                     child: Text(
-                      "19ps",
+                      "Total",
                       style: TextStyle(
                           fontFamily: "itim",
                           fontSize: 20,
@@ -439,7 +439,7 @@ class _New_mortageState extends State<New_mortage> {
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: Colors.black)),
                     child: Text(
-                      "6.4b",
+                      "Total",
                       style: TextStyle(
                           fontFamily: "itim",
                           fontSize: 20,

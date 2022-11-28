@@ -1,32 +1,15 @@
 import 'package:admincode/Homepage/Home_page.dart';
-import 'package:admincode/M_details.dart/Details_m.dart';
-import 'package:admincode/Mortageperson/Mortage_pay.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Mortage_person extends StatefulWidget {
-  const Mortage_person({Key? key}) : super(key: key);
+class Old_print extends StatefulWidget {
+  const Old_print({Key? key}) : super(key: key);
 
   @override
-  State<Mortage_person> createState() => _Mortage_personState();
+  State<Old_print> createState() => _Old_printState();
 }
 
-class _Mortage_personState extends State<Mortage_person> {
-  DateTime currentDate = DateTime.now();
-  Future<void> _selectDate(BuildContext context) async {
-    final DateTime? pickedDate = await showDatePicker(
-        context: context,
-        initialDate: currentDate,
-        firstDate: DateTime(1900),
-        lastDate: DateTime(3050));
-    if (pickedDate != null && pickedDate != currentDate)
-      setState(() {
-        currentDate = pickedDate;
-      });
-  }
-
-  final ScrollController _controller = ScrollController();
-  double _scrollOffset = 0;
+class _Old_printState extends State<Old_print> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -145,85 +128,103 @@ class _Mortage_personState extends State<Mortage_person> {
           DataColumn(label: Text('No')),
           DataColumn(label: Text('Name')),
           DataColumn(label: Text('Weigth')),
-          // DataColumn(label: Text('Money')),
+          DataColumn(label: Text('Money')),
         ], rows: [
           DataRow(cells: [
             DataCell(Text('1')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('2')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('2')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('3')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('1')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('4')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('1')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('5')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('6')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('7')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('8')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('9')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
           ]),
           DataRow(cells: [
             DataCell(Text('10')),
             DataCell(Text('Neckless')),
             DataCell(Text('1.6b')),
-            // DataCell(Text('680900Tk')),
+            DataCell(Text('680900Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('')),
+            DataCell(Text('')),
+            DataCell(Text('Money')),
+            DataCell(Text('2500000Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('')),
+            DataCell(Text('')),
+            DataCell(Text('Interest')),
+            DataCell(Text('5600Tk')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('')),
+            DataCell(Text('')),
+            DataCell(Text('Total')),
+            DataCell(Text('232434')),
           ]),
         ]),
         SizedBox(
@@ -231,68 +232,31 @@ class _Mortage_personState extends State<Mortage_person> {
         ),
         InkWell(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Mortage_pay()));
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Home_page()));
           },
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Container(
-                height: 40.h,
-                width: 100.w,
-                alignment: Alignment.center,
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 3,
-                      blurRadius: 3,
-                      offset: Offset(0, 2), // changes position of shadow
-                    ),
-                  ],
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(10),
+          child: Container(
+            height: 40.h,
+            width: 100.w,
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.2),
+                  spreadRadius: 3,
+                  blurRadius: 3,
+                  offset: Offset(0, 2), // changes position of shadow
                 ),
-                child: Text(
-                  "Pay",
-                  style: TextStyle(
-                      fontSize: 20, fontFamily: "itim", color: Colors.white),
-                ),
-              ),
-              SizedBox(
-                width: 20,
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Details_m()));
-                },
-                child: Container(
-                  height: 40.h,
-                  width: 100.w,
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.2),
-                        spreadRadius: 3,
-                        blurRadius: 3,
-                        offset: Offset(0, 2), // changes position of shadow
-                      ),
-                    ],
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Text(
-                    "Print",
-                    style: TextStyle(
-                        fontSize: 20, fontFamily: "itim", color: Colors.white),
-                  ),
-                ),
-              ),
-            ],
+              ],
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Text(
+              "Print",
+              style: TextStyle(
+                  fontSize: 20, fontFamily: "itim", color: Colors.white),
+            ),
           ),
         ),
       ]),
