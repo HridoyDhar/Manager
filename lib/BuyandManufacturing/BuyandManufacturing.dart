@@ -2,6 +2,7 @@ import 'package:admincode/AddProduct/Add_product.dart';
 import 'package:admincode/Buylist/Buy_list.dart';
 import 'package:admincode/Manufacturing%20man/Manufacturing_man.dart';
 import 'package:admincode/Paybills/Pay_bills.dart';
+import 'package:admincode/Workingpeople/Working_people.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -156,7 +157,7 @@ class _BuyandManufacturingState extends State<BuyandManufacturing> {
           InkWell(
             onTap: (() {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Add_product()));
+                  MaterialPageRoute(builder: (context) => Working_people()));
             }),
             child: Container(
               alignment: Alignment.center,

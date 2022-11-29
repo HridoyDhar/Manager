@@ -93,7 +93,7 @@ class _Payment_listState extends State<Payment_list> {
                   Container(
                     alignment: Alignment.center,
                     child: Text(
-                      "1.Rimon          460000Tk",
+                      "1.Rimon          460000Tk        20-02-2019",
                       style: TextStyle(
                           fontSize: 15.sp,
                           fontWeight: FontWeight.w700,
