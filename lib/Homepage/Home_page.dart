@@ -325,42 +325,34 @@ class _Home_pageState extends State<Home_page> {
               ),
               Row(
                 children: [
-                  InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Producet_list()));
-                    },
-                    child: Container(
-                      alignment: Alignment.center,
-                      margin: EdgeInsets.symmetric(horizontal: 20),
-                      height: 100,
-                      width: 80.w,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Color(0xff7FB3D5)),
-                      child: Column(
-                        children: [
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Container(
-                              height: 50,
-                              width: 50,
-                              child: Image.asset("assets/box.png")),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Text(
-                            "Product",
-                            style: TextStyle(
-                                fontFamily: "inter",
-                                fontSize: 15,
-                                color: Colors.white),
-                          )
-                        ],
-                      ),
+                  Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    height: 100,
+                    width: 80.w,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xff7FB3D5)),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Container(
+                            height: 50,
+                            width: 50,
+                            child: Image.asset("assets/box.png")),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "Product",
+                          style: TextStyle(
+                              fontFamily: "inter",
+                              fontSize: 15,
+                              color: Colors.white),
+                        )
+                      ],
                     ),
                   ),
                   InkWell(

@@ -1,4 +1,7 @@
 import 'package:admincode/Dailyincome/Day_income.dart';
+import 'package:admincode/Incomelist/Daliy_incomelist.dart';
+import 'package:admincode/Incomelist/Month_incomelist.dart';
+import 'package:admincode/Incomelist/Year_income.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -50,473 +53,95 @@ class _Income_listState extends State<Income_list> {
             ),
           ),
           SizedBox(
-            height: 20.h,
+            height: 20,
           ),
           InkWell(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Day_income()));
+                  MaterialPageRoute(builder: (context) => Year_income()));
             },
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 40,
+              width: 300,
               decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "1.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Day_income()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "2.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Day_income()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "3.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Day_income()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "4.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Day_income()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "5.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Day_income()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "6.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Day_income()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "7.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Day_income()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "8.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Day_income()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.money,
-                    color: Colors.greenAccent,
-                  ),
-                  SizedBox(
-                    width: 15.w,
-                  ),
-                  Container(
-                    child: Text(
-                      "9.Income                                                    569000",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 20.h,
-          ),
-          InkWell(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Day_income()));
-            },
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20.w),
-              height: 40.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 2), // changes position of shadow
-                  ),
-                ],
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Card(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.money,
-                      color: Colors.greenAccent,
-                    ),
-                    SizedBox(
-                      width: 15.w,
-                    ),
-                    Container(
-                      child: Text(
-                        "10.Income                                                    569000",
-                        style: TextStyle(
-                            fontSize: 15.sp,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.black),
-                      ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
                     ),
                   ],
-                ),
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color(0xffF7FAFF)),
+              child: Text(
+                "Year Income",
+                style: TextStyle(
+                    fontFamily: "itim", fontSize: 20, color: Colors.black),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: (() {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Daily_incomelist()));
+            }),
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 40,
+              width: 300,
+              decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
+                    ),
+                  ],
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color(0xffF7FAFF)),
+              child: Text(
+                "Daily",
+                style: TextStyle(
+                    fontFamily: "itim", fontSize: 20, color: Colors.black),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Month_incomelist()));
+            },
+            child: Container(
+              alignment: Alignment.center,
+              margin: EdgeInsets.symmetric(horizontal: 20),
+              height: 40,
+              width: 300,
+              decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 3,
+                      offset: Offset(0, 2), // changes position of shadow
+                    ),
+                  ],
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color(0xffF7FAFF)),
+              child: Text(
+                "Month",
+                style: TextStyle(
+                    fontFamily: "itim", fontSize: 20, color: Colors.black),
               ),
             ),
           ),

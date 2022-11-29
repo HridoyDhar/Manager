@@ -73,7 +73,7 @@ class _Add_productState extends State<Add_product> {
                     ),
                   ),
                   SizedBox(
-                    height: 5,
+                    width: 5,
                   ),
                   Container(
                     height: 40,
@@ -92,6 +92,44 @@ class _Add_productState extends State<Add_product> {
           SizedBox(
             height: 20,
           ),
+          Container(
+              child: Column(children: [
+            Row(
+                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SizedBox(
+                    width: 150,
+                  ),
+                  Container(
+                    height: 40,
+                    width: 60,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    alignment: Alignment.center,
+                    child: TextField(
+                      decoration: InputDecoration(
+                        labelText: "Carret",
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10)),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    height: 40,
+                    width: 60,
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    alignment: Alignment.center,
+                    child: TextField(
+                      decoration: InputDecoration(
+                          labelText: "Weight",
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10))),
+                    ),
+                  ),
+                ])
+          ])),
           SizedBox(
             height: 20,
           ),

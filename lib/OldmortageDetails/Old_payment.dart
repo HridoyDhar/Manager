@@ -229,19 +229,19 @@ class _Old_paymentState extends State<Old_payment> {
             ]),
             DataRow(cells: [
               DataCell(Text('')),
-              DataCell(Text('Neckless')),
+              DataCell(Text('Total')),
               DataCell(Text('...')),
               // DataCell(Text('680900Tk')),
             ]),
             DataRow(cells: [
               DataCell(Text('')),
-              DataCell(Text('Neckless')),
+              DataCell(Text('Interest')),
               DataCell(Text('...')),
               // DataCell(Text('680900Tk')),
             ]),
             DataRow(cells: [
               DataCell(Text('')),
-              DataCell(Text('Neckless')),
+              DataCell(Text('Pay')),
               DataCell(Text('...')),
               // DataCell(Text('680900Tk')),
             ]),
@@ -275,6 +275,9 @@ class _Old_paymentState extends State<Old_payment> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10))),
             ),
+          ),
+          SizedBox(
+            height: 20,
           ),
           InkWell(
             onTap: () {
