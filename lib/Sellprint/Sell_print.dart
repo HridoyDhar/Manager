@@ -24,9 +24,9 @@ class _Sell_printState extends State<Sell_print> {
             width: 300.w,
             margin: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue)),
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+            ),
             child: Text(
               "Krishna Gold Shop",
               style: TextStyle(
@@ -42,9 +42,9 @@ class _Sell_printState extends State<Sell_print> {
             height: 40.h,
             width: 200.w,
             decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Colors.blue)),
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+            ),
             child: Text("19-03-23",
                 style: TextStyle(
                     fontFamily: "itim", fontSize: 20, color: Colors.black)),
@@ -52,56 +52,50 @@ class _Sell_printState extends State<Sell_print> {
           SizedBox(
             height: 30,
           ),
-          Card(
-            child: Container(
-              alignment: Alignment.centerLeft,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 20.h,
-              width: 700.w,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("Mr.Rahul",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.centerLeft,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 20.h,
+            width: 700.w,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("Mr.Rahul",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(
             height: 20,
           ),
-          Card(
-            child: Container(
-              alignment: Alignment.centerLeft,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 20.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("Mew towner aros ,chiigltonk",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.centerLeft,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 20.h,
+            width: 200.w,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("Mew towner aros ,chiigltonk",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(
             height: 20,
           ),
-          Card(
-            child: Container(
-              alignment: Alignment.centerLeft,
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              height: 20.h,
-              width: 200.w,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text("013743995723",
-                  style: TextStyle(
-                      fontSize: 15, fontFamily: "itim", color: Colors.black)),
+          Container(
+            alignment: Alignment.centerLeft,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            height: 20.h,
+            width: 200.w,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: Text("013743995723",
+                style: TextStyle(
+                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
           SizedBox(
             height: 20,
@@ -109,12 +103,12 @@ class _Sell_printState extends State<Sell_print> {
           Row(
             children: [
               SizedBox(
-                width: 250,
+                width: 120,
               ),
               Center(
-                child: Text("22K",
+                child: Text("Carrat:22K",
                     style: TextStyle(
-                        fontSize: 26, fontFamily: "itim", color: Colors.red)),
+                        fontSize: 26, fontFamily: "itim", color: Colors.black)),
               ),
             ],
           ),

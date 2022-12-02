@@ -159,7 +159,7 @@ class _Bkash_otpState extends State<Bkash_otp> {
                             color: Colors.white),
                       ),
                       SizedBox(
-                        width: 100,
+                        width: 150,
                       ),
                       InkWell(
                         onTap: (() {

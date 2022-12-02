@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:admincode/Bigmortge/Big_mortage.dart';
+import 'package:admincode/BuyStorage/Buy_storage.dart';
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:admincode/Mortagelis/Mortage_list.dart';
 import 'package:flutter/material.dart';
@@ -536,8 +537,40 @@ class _Old_mortageState extends State<Old_mortage> {
         ),
         InkWell(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => Mortage_list()));
+            showDialog(
+                context: context,
+                builder: (context) => SimpleDialog(
+                      title: const Text("Watch or Buy"),
+                      contentPadding: const EdgeInsets.all(20.0),
+                      children: [
+                        const Text("You need more storage for store your data"),
+                        Row(
+                          children: [
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: const Text("Watch ")),
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Buy_storage()));
+                                },
+                                child: Text("Buy")),
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Old_mortage()));
+                                },
+                                child: Text("Close"))
+                          ],
+                        ),
+                      ],
+                    ));
           },
           child: Container(
             alignment: Alignment.center,

@@ -1,3 +1,4 @@
+import 'package:admincode/BuyStorage/Buy_storage.dart';
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:admincode/Oldmortage/Old_mortage.dart';
 import 'package:flutter/material.dart';
@@ -213,8 +214,43 @@ class _Big_mortageState extends State<Big_mortage> {
           ),
           InkWell(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Home_page()));
+              showDialog(
+                  context: context,
+                  builder: (context) => SimpleDialog(
+                        title: const Text("Watch or Buy"),
+                        contentPadding: const EdgeInsets.all(20.0),
+                        children: [
+                          const Text(
+                              "You need more storage for store your data"),
+                          Row(
+                            children: [
+                              TextButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  child: const Text("Watch ")),
+                              TextButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                Buy_storage()));
+                                  },
+                                  child: Text("Buy")),
+                              TextButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                Big_mortage()));
+                                  },
+                                  child: Text("Close"))
+                            ],
+                          ),
+                        ],
+                      ));
             },
             child: Container(
               height: 40.h,

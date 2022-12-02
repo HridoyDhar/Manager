@@ -158,7 +158,7 @@ class _Bkash_pinState extends State<Bkash_pin> {
                             color: Colors.white),
                       ),
                       SizedBox(
-                        width: 100,
+                        width: 150,
                       ),
                       Text(
                         "Confirm",

@@ -156,10 +156,10 @@ class _Pay_mentState extends State<Pay_ment> {
                         style: TextStyle(
                             fontFamily: "itim",
                             fontSize: 20,
-                            color: Colors.white),
+                            color: Colors.black),
                       ),
                       SizedBox(
-                        width: 100,
+                        width: 150,
                       ),
                       InkWell(
                         onTap: (() {

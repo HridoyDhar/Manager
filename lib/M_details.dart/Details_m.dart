@@ -16,7 +16,7 @@ class _Details_mState extends State<Details_m> {
       backgroundColor: Colors.white,
       body: ListView(children: [
         SizedBox(
-          height: 20,
+          height: 100,
         ),
         Container(
           alignment: Alignment.center,
@@ -37,71 +37,67 @@ class _Details_mState extends State<Details_m> {
           height: 20,
         ),
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 200),
           alignment: Alignment.center,
           height: 40.h,
+          width: 300.w,
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Text(
+            " 20-07-2000",
+            style: TextStyle(
+                fontFamily: "itim", fontSize: 20, color: Colors.black),
+          ),
+        ),
+        SizedBox(
+          height: 30,
+        ),
+        Container(
+          alignment: Alignment.centerLeft,
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          height: 20.h,
+          width: 700.w,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Text("Mr.Rahul",
+              style: TextStyle(
+                  fontSize: 15, fontFamily: "itim", color: Colors.black)),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Container(
+          alignment: Alignment.centerLeft,
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          height: 20.h,
           width: 200.w,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
           ),
-          child: Text("19-03-23",
+          child: Text("Mew towner aros ,chiigltonk",
               style: TextStyle(
-                  fontFamily: "itim", fontSize: 20, color: Colors.black)),
-        ),
-        SizedBox(
-          height: 30,
-        ),
-        Card(
-          child: Container(
-            alignment: Alignment.centerLeft,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 20.h,
-            width: 700.w,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text("Mr.Rahul",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
-          ),
+                  fontSize: 15, fontFamily: "itim", color: Colors.black)),
         ),
         SizedBox(
           height: 20,
         ),
-        Card(
-          child: Container(
-            alignment: Alignment.centerLeft,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 20.h,
-            width: 200.w,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text("Mew towner aros ,chiigltonk",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
+        Container(
+          alignment: Alignment.centerLeft,
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          height: 20.h,
+          width: 200.w,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
           ),
-        ),
-        SizedBox(
-          height: 20,
-        ),
-        Card(
-          child: Container(
-            alignment: Alignment.centerLeft,
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            height: 20.h,
-            width: 200.w,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Text("013743995723",
-                style: TextStyle(
-                    fontSize: 15, fontFamily: "itim", color: Colors.black)),
-          ),
+          child: Text("013743995723",
+              style: TextStyle(
+                  fontSize: 15, fontFamily: "itim", color: Colors.black)),
         ),
         SizedBox(
           height: 20,

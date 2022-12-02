@@ -57,11 +57,11 @@ class _Add_productState extends State<Add_product> {
                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SizedBox(
-                    width: 150,
+                    width: 50,
                   ),
                   Container(
                     height: 40,
-                    width: 60,
+                    width: 100,
                     margin: EdgeInsets.symmetric(horizontal: 20),
                     alignment: Alignment.center,
                     child: TextField(
@@ -77,7 +77,7 @@ class _Add_productState extends State<Add_product> {
                   ),
                   Container(
                     height: 40,
-                    width: 60,
+                    width: 100,
                     margin: EdgeInsets.symmetric(horizontal: 20),
                     alignment: Alignment.center,
                     child: TextField(
@@ -98,11 +98,11 @@ class _Add_productState extends State<Add_product> {
                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SizedBox(
-                    width: 150,
+                    width: 50,
                   ),
                   Container(
                     height: 40,
-                    width: 60,
+                    width: 100,
                     margin: EdgeInsets.symmetric(horizontal: 20),
                     alignment: Alignment.center,
                     child: TextField(
@@ -118,7 +118,7 @@ class _Add_productState extends State<Add_product> {
                   ),
                   Container(
                     height: 40,
-                    width: 60,
+                    width: 100,
                     margin: EdgeInsets.symmetric(horizontal: 20),
                     alignment: Alignment.center,
                     child: TextField(
@@ -154,6 +154,30 @@ class _Add_productState extends State<Add_product> {
               "Done",
               style: TextStyle(
                   fontSize: 20, fontFamily: "itim", color: Colors.white),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Center(
+            child: Container(
+              child: Text(
+                "You have :120.8.9.0 b Gold",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Center(
+            child: Container(
+              child: Text(
+                "You Sell :20.8.9.0 b Gold",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: "itim", color: Colors.black),
+              ),
             ),
           ),
         ],
