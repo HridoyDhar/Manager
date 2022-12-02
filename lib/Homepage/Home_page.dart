@@ -61,7 +61,7 @@ class _Home_pageState extends State<Home_page> {
                     height: 20,
                   ),
                   Text(
-                    "Sell:344500Tk",
+                    "Sell       :344500Tk",
                     style: TextStyle(
                         color: Colors.black, fontFamily: "itim", fontSize: 20),
                   ),
@@ -69,7 +69,7 @@ class _Home_pageState extends State<Home_page> {
                     height: 20,
                   ),
                   Text(
-                    "Cost:344500Tk",
+                    "Cost     :344500Tk",
                     style: TextStyle(
                         color: Colors.black, fontFamily: "itim", fontSize: 20),
                   ),

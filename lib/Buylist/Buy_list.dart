@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../BuyStorage/Buy_storage.dart';
 import '../Homepage/Home_page.dart';
 
 class Buy_list extends StatefulWidget {
@@ -198,8 +199,43 @@ class _Buy_listState extends State<Buy_list> {
           Center(
             child: InkWell(
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Home_page()));
+                showDialog(
+                    context: context,
+                    builder: (context) => SimpleDialog(
+                          title: const Text("Watch or Buy"),
+                          contentPadding: const EdgeInsets.all(20.0),
+                          children: [
+                            const Text(
+                                "You need more storage for store your data"),
+                            Row(
+                              children: [
+                                TextButton(
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                    child: const Text("Watch ")),
+                                TextButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  Buy_storage()));
+                                    },
+                                    child: Text("Buy")),
+                                TextButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  Buy_list()));
+                                    },
+                                    child: Text("Close"))
+                              ],
+                            ),
+                          ],
+                        ));
               },
               child: Container(
                 alignment: Alignment.center,

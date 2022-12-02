@@ -1,3 +1,4 @@
+import 'package:admincode/BuyStorage/Buy_storage.dart';
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:admincode/Workingpeople/Working_people.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -211,8 +212,43 @@ class _Manufacturing_manState extends State<Manufacturing_man> {
           Center(
             child: InkWell(
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Working_people()));
+                showDialog(
+                    context: context,
+                    builder: (context) => SimpleDialog(
+                          title: const Text("Watch or Buy"),
+                          contentPadding: const EdgeInsets.all(20.0),
+                          children: [
+                            const Text(
+                                "You need more storage for store your data"),
+                            Row(
+                              children: [
+                                TextButton(
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                    child: const Text("Watch ")),
+                                TextButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  Buy_storage()));
+                                    },
+                                    child: Text("Buy")),
+                                TextButton(
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  Manufacturing_man()));
+                                    },
+                                    child: Text("Close"))
+                              ],
+                            ),
+                          ],
+                        ));
               },
               child: Container(
                 alignment: Alignment.center,

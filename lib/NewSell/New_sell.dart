@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:admincode/BuyStorage/Buy_storage.dart';
 import 'package:admincode/Homepage/Home_page.dart';
 import 'package:admincode/Imae_picker.dart';
 import 'package:admincode/Mortagelis/Mortage_list.dart';
@@ -706,8 +707,40 @@ class _New_sellState extends State<New_sell> {
         ),
         InkWell(
           onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Sell_list()));
+            showDialog(
+                context: context,
+                builder: (context) => SimpleDialog(
+                      title: const Text("Watch or Buy"),
+                      contentPadding: const EdgeInsets.all(20.0),
+                      children: [
+                        const Text("You need more storage for store your data"),
+                        Row(
+                          children: [
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: const Text("Watch ")),
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Buy_storage()));
+                                },
+                                child: Text("Buy")),
+                            TextButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => New_sell()));
+                                },
+                                child: Text("Close"))
+                          ],
+                        ),
+                      ],
+                    ));
           },
           child: Container(
             alignment: Alignment.center,
