@@ -42,7 +42,7 @@ class _Home_pageState extends State<Home_page> {
                     borderRadius: BorderRadius.circular(90),
                     color: Colors.blueAccent),
                 child: Text(
-                  "339947Tk",
+                  "339947টাকা",
                   style: TextStyle(
                       fontFamily: "itim", fontSize: 25, color: Colors.white),
                 ),
@@ -53,7 +53,7 @@ class _Home_pageState extends State<Home_page> {
               Column(
                 children: [
                   Text(
-                    "Mortage:344500Tk",
+                    "বন্ধক: 344500টাকা",
                     style: TextStyle(
                         color: Colors.black, fontFamily: "itim", fontSize: 20),
                   ),
@@ -61,7 +61,7 @@ class _Home_pageState extends State<Home_page> {
                     height: 20,
                   ),
                   Text(
-                    "Sell       :344500Tk",
+                    "বিক্রয়: 344500টাকা",
                     style: TextStyle(
                         color: Colors.black, fontFamily: "itim", fontSize: 20),
                   ),
@@ -69,7 +69,7 @@ class _Home_pageState extends State<Home_page> {
                     height: 20,
                   ),
                   Text(
-                    "Cost     :344500Tk",
+                    "খরচ: 344500টাকা",
                     style: TextStyle(
                         color: Colors.black, fontFamily: "itim", fontSize: 20),
                   ),
@@ -113,7 +113,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Mortage",
+                            "বন্ধক ",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,
@@ -151,7 +151,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Earning",
+                            "ইনকাম",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,
@@ -187,7 +187,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Sell",
+                            "বিক্রি",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,
@@ -232,7 +232,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Calculator",
+                            "ক্যালকুলেটর ",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,
@@ -270,7 +270,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Employees",
+                            "লোকজন",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,
@@ -308,7 +308,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Payment",
+                            "প্রদান",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,
@@ -383,7 +383,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Price",
+                            "টাকা",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,
@@ -421,7 +421,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Mortage",
+                            " নতুন বন্ধক ",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,
@@ -466,7 +466,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Employee",
+                            "নতুন লোকজন  ",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,
@@ -502,7 +502,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Sell",
+                            "নতুন বিক্রি ",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,
@@ -540,7 +540,7 @@ class _Home_pageState extends State<Home_page> {
                             height: 10,
                           ),
                           Text(
-                            "Others",
+                            "অন্যান ",
                             style: TextStyle(
                                 fontFamily: "inter",
                                 fontSize: 15,

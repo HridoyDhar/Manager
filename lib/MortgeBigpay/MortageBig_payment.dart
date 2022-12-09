@@ -47,7 +47,7 @@ class _MortageBig_paymentState extends State<MortageBig_payment> {
             borderRadius: BorderRadius.circular(10),
           ),
           child: Text(
-            "Krishna Gold Shop",
+            "কৃষ্ণ কুমার  গোল্ড ",
             style: TextStyle(
                 fontFamily: "itim", fontSize: 25, color: Colors.black),
           ),
@@ -64,7 +64,7 @@ class _MortageBig_paymentState extends State<MortageBig_payment> {
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
           ),
-          child: Text("19-03-23",
+          child: Text(" ১২-০৯-২০১০",
               style: TextStyle(
                   fontFamily: "itim", fontSize: 20, color: Colors.black)),
         ),
@@ -81,7 +81,7 @@ class _MortageBig_paymentState extends State<MortageBig_payment> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text("Mr.Rahul",
+            child: Text("কৃষ্ণ কুমার",
                 style: TextStyle(
                     fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
@@ -99,7 +99,7 @@ class _MortageBig_paymentState extends State<MortageBig_payment> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text("Mew towner aros ,chiigltonk",
+            child: Text("বাহাদ্র্রহাট ,চিটাগং ",
                 style: TextStyle(
                     fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
@@ -117,7 +117,7 @@ class _MortageBig_paymentState extends State<MortageBig_payment> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text("013743995723",
+            child: Text("০১৯৮৩৭৮৯৭২",
                 style: TextStyle(
                     fontSize: 15, fontFamily: "itim", color: Colors.black)),
           ),
@@ -135,7 +135,7 @@ class _MortageBig_paymentState extends State<MortageBig_payment> {
             borderRadius: BorderRadius.circular(10),
           ),
           child: Text(
-            "5 % 100",
+            "৫ % ১০০",
             style: TextStyle(
                 fontSize: 25, fontFamily: "itim", color: Colors.black),
           ),
@@ -144,15 +144,15 @@ class _MortageBig_paymentState extends State<MortageBig_payment> {
           height: 10,
         ),
         DataTable(columns: [
-          DataColumn(label: Text('No')),
-          DataColumn(label: Text('Name')),
-          DataColumn(label: Text('Weigth')),
+          DataColumn(label: Text('নাম্বার')),
+          DataColumn(label: Text('নাম')),
+          DataColumn(label: Text('পিস')),
           // DataColumn(label: Text('Money')),
         ], rows: [
           DataRow(cells: [
-            DataCell(Text('1')),
-            DataCell(Text('Neckless')),
-            DataCell(Text('1.6b')),
+            DataCell(Text(' ১')),
+            DataCell(Text('প্রবীণ দাশ')),
+            DataCell(Text('১২০')),
             // DataCell(Text('680900Tk')),
           ]),
         ]),

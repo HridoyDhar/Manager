@@ -53,8 +53,8 @@ class _New_mortageState extends State<New_mortage> {
           margin: EdgeInsets.symmetric(horizontal: 20),
           child: TextField(
             decoration: InputDecoration(
-              labelText: "Shop Name",
-              hintText: "Enter your shop name",
+              labelText: "দোকানের নাম ",
+              hintText: "দোকানের নাম  লিখুন ",
               border:
                   OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
             ),
@@ -70,7 +70,7 @@ class _New_mortageState extends State<New_mortage> {
               Text(currentDate.toString()),
               ElevatedButton(
                 onPressed: () => _selectDate(context),
-                child: Text('Select date'),
+                child: Text('তারিখ'),
               ),
             ],
           ),
@@ -85,8 +85,8 @@ class _New_mortageState extends State<New_mortage> {
           child: TextField(
             controller: Name,
             decoration: InputDecoration(
-                labelText: "Name",
-                hintText: "Enter your name",
+                labelText: "কাস্টারমার এর নাম ",
+                hintText: "কাস্টারমার এর নাম  লিখুন",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                 prefixIcon: Icon(
@@ -105,8 +105,8 @@ class _New_mortageState extends State<New_mortage> {
           child: TextField(
             controller: Address,
             decoration: InputDecoration(
-                labelText: "Address",
-                hintText: "Enter your address",
+                labelText: "কাস্টমার এর ঠিকানা ",
+                hintText: "কাস্টমার এর ঠিকানা লিখুন",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                 prefixIcon: Icon(
@@ -125,8 +125,8 @@ class _New_mortageState extends State<New_mortage> {
           child: TextField(
             controller: Number,
             decoration: InputDecoration(
-                labelText: "Number",
-                hintText: "Enter your number",
+                labelText: "কাস্টমার এর নাম্বার",
+                hintText: "কাস্টমার এর নাম্বার লিখুন ",
                 border:
                     OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                 prefixIcon: Icon(
@@ -152,8 +152,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Percent",
-                        hintText: '100=5%',
+                        labelText: "শতাংশ",
+                        hintText: '৫%১০০',
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -180,7 +180,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Name",
+                        labelText: "নাম  ",
+                        hintText: "জিনিসের  নাম লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -195,7 +196,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Weight",
+                        labelText: "ওজন",
+                        hintText: "জিনিসের  ওজন  লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -220,7 +222,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Name",
+                        labelText: "নাম  ",
+                        hintText: "জিনিসের  নাম লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -235,7 +238,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Weight",
+                        labelText: "ওজন",
+                        hintText: "জিনিসের  ওজন  লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -260,7 +264,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Name",
+                        labelText: "নাম  ",
+                        hintText: "জিনিসের  নাম লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -275,7 +280,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Weight",
+                        labelText: "ওজন",
+                        hintText: "জিনিসের  ওজন  লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -300,7 +306,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Name",
+                        labelText: "ওজন",
+                        hintText: "জিনিসের  ওজন  লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -315,7 +322,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Weight",
+                        labelText: "নাম  ",
+                        hintText: "জিনিসের  নাম লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -340,7 +348,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Name",
+                        labelText: "নাম  ",
+                        hintText: "জিনিসের  নাম লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -355,7 +364,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Weight",
+                        labelText: "ওজন",
+                        hintText: "জিনিসের  ওজন  লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -380,7 +390,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Name",
+                        labelText: "নাম  ",
+                        hintText: "জিনিসের  নাম লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -395,7 +406,8 @@ class _New_mortageState extends State<New_mortage> {
                   alignment: Alignment.center,
                   child: TextField(
                     decoration: InputDecoration(
-                        labelText: "Weight",
+                        labelText: "ওজন",
+                        hintText: "জিনিসের  ওজন  লিখুন ",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10))),
                   ),
@@ -422,7 +434,7 @@ class _New_mortageState extends State<New_mortage> {
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: Colors.black)),
                     child: Text(
-                      "Total",
+                      " ১২ টি  ",
                       style: TextStyle(
                           fontFamily: "itim",
                           fontSize: 20,
@@ -440,7 +452,7 @@ class _New_mortageState extends State<New_mortage> {
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: Colors.black)),
                     child: Text(
-                      "Total",
+                      "৩০.৭.৭ ",
                       style: TextStyle(
                           fontFamily: "itim",
                           fontSize: 20,
@@ -458,7 +470,7 @@ class _New_mortageState extends State<New_mortage> {
           margin: EdgeInsets.symmetric(horizontal: 80),
           child: TextField(
             decoration: InputDecoration(
-                labelText: "Money",
+                labelText: "টাকা",
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10))),
           ),
@@ -471,17 +483,18 @@ class _New_mortageState extends State<New_mortage> {
             showDialog(
                 context: context,
                 builder: (context) => SimpleDialog(
-                      title: const Text("Watch or Buy"),
+                      title: const Text("দেখুন বা কিনুন "),
                       contentPadding: const EdgeInsets.all(20.0),
                       children: [
-                        const Text("You need more storage for store your data"),
+                        const Text(
+                            "আপনার ডেটা সঞ্চয় করার জন্য আপনার আরও স্টোরেজ প্রয়োজন"),
                         Row(
                           children: [
                             TextButton(
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: const Text("Watch ")),
+                                child: const Text("ভিডিও ")),
                             TextButton(
                                 onPressed: () {
                                   Navigator.push(
@@ -489,7 +502,7 @@ class _New_mortageState extends State<New_mortage> {
                                       MaterialPageRoute(
                                           builder: (context) => Buy_storage()));
                                 },
-                                child: Text("Buy")),
+                                child: Text("কিনুন")),
                             TextButton(
                                 onPressed: () {
                                   Navigator.push(
@@ -497,7 +510,7 @@ class _New_mortageState extends State<New_mortage> {
                                       MaterialPageRoute(
                                           builder: (context) => New_mortage()));
                                 },
-                                child: Text("Close"))
+                                child: Text("বন্ধ"))
                           ],
                         ),
                       ],
@@ -521,7 +534,7 @@ class _New_mortageState extends State<New_mortage> {
               color: Colors.blue,
             ),
             child: Text(
-              "Done",
+              "ঠিক ",
               style: TextStyle(
                   fontSize: 20, fontFamily: "itim", color: Colors.white),
             ),
@@ -538,7 +551,7 @@ class _New_mortageState extends State<New_mortage> {
                 width: 50,
               ),
               Text(
-                "You need to other's mortage .",
+                "বড় বন্ধক গুলো দিতে| ",
                 style: TextStyle(
                     fontFamily: "itim", fontSize: 20, color: Colors.black),
               ),
@@ -548,7 +561,7 @@ class _New_mortageState extends State<New_mortage> {
                       MaterialPageRoute(builder: (context) => Big_mortage()));
                 }),
                 child: Text(
-                  "Click here",
+                  "ক্লিক করুন",
                   style: TextStyle(
                       fontFamily: "itim", fontSize: 20, color: Colors.blue),
                 ),

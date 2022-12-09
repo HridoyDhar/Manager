@@ -109,7 +109,7 @@ class _Mortage_bigState extends State<Mortage_big> {
                     ),
                     Container(
                       child: Text(
-                        "1.Mr krishna                569000",
+                        " ১.কৃষ্ণ কুমার  ২০০০০ টাকা ",
                         style: TextStyle(
                             fontSize: 15.sp,
                             fontWeight: FontWeight.w700,

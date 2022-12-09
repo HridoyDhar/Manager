@@ -45,7 +45,7 @@ class _OldandNew_mortageState extends State<OldandNew_mortage> {
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text(
-              "Big Mortage",
+              "বড় বন্ধক ",
               style: TextStyle(
                   fontSize: 20, fontFamily: "itim", color: Colors.blue),
             ),
@@ -77,7 +77,7 @@ class _OldandNew_mortageState extends State<OldandNew_mortage> {
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text(
-              "Old Mortage",
+              "পুরাতন বন্ধক",
               style: TextStyle(
                   fontSize: 20, fontFamily: "itim", color: Colors.blue),
             ),
@@ -109,7 +109,7 @@ class _OldandNew_mortageState extends State<OldandNew_mortage> {
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text(
-              "New Mortage",
+              "নতুন  বন্ধক ",
               style: TextStyle(
                   fontSize: 20, fontFamily: "itim", color: Colors.blue),
             ),

@@ -59,6 +59,7 @@ dependencies:
   flutter_profile_picture: ^2.0.0
   show_dialog: ^1.0.3
   expansion_tile_card: ^2.0.0
+  google_mobile_ads: ^2.3.0
   # image_form_field: ^0.0.2
  
 
